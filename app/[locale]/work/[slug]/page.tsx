@@ -53,7 +53,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
           />
         ) : (
           <div className="aspect-video relative">
-            <Image src={project.media[0]?.src || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
+            <Image src={getAssetPath(project.media[0]?.src || "/placeholder.svg")} alt={project.title} fill className="object-cover" />
           </div>
         )}
 
@@ -114,7 +114,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
             ) : (
               <div className="aspect-video relative bg-black">
                 <Image
-                  src={item.src || "/placeholder.svg"}
+                  src={getAssetPath(item.src || "/placeholder.svg")}
                   alt={`${project.title} ${index + 2}`}
                   fill
                   className="object-cover"
@@ -156,7 +156,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
             ) : (
               <div className="aspect-video relative bg-black">
                 <Image
-                  src={item.src || "/placeholder.svg"}
+                  src={getAssetPath(item.src || "/placeholder.svg")}
                   alt={`${project.title} ${index + 4}`}
                   fill
                   className="object-cover"

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from "next/image"
 import { Link } from "@/i18n/routing"
 import type { LocalizedProject } from "@/lib/projects"
+import { getAssetPath } from '@/lib/utils/assets'
 
 // Map category keys to role keywords (case-insensitive matching) - includes EN and PT
 const categoryRoleMap: Record<string, string[]> = {
@@ -58,7 +59,7 @@ export function ProjectsGrid({ projects, categoryKeys, translations }: ProjectsG
           <Link key={project.id} href={`/work/${project.id}`} className="group">
             <div className="relative overflow-hidden bg-secondary h-202.5 mb-3">
               <Image
-                src={project.image || "/placeholder.svg"}
+                src={getAssetPath(project.image || "/placeholder.svg")}
                 alt={project.title}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
