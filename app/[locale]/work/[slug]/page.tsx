@@ -5,6 +5,7 @@ import { notFound } from "next/navigation"
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import { routing } from '@/i18n/routing'
+import { getAssetPath } from '@/lib/utils/assets'
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -42,7 +43,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
         {/* Main Media */}
         {project.media[0]?.type === 'video' ? (
           <video
-            src={project.media[0].src}
+            src={getAssetPath(project.media[0].src)}
             autoPlay={!project.media[0].controls}
             muted={!project.media[0].controls}
             loop={!project.media[0].controls}
@@ -102,7 +103,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
           <div key={index}>
             {item.type === 'video' ? (
               <video
-                src={item.src}
+                src={getAssetPath(item.src)}
                 autoPlay={!item.controls}
                 muted={!item.controls}
                 loop={!item.controls}
@@ -144,7 +145,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
           <div key={index}>
             {item.type === 'video' ? (
               <video
-                src={item.src}
+                src={getAssetPath(item.src)}
                 autoPlay={!item.controls}
                 muted={!item.controls}
                 loop={!item.controls}
