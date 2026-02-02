@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[3365,["/_next/static/chunks/fee981642db877e2.js","/_next/static/chunks/8c134e997e581c1a.js","/_next/static/chunks/6e3125cda1f23d54.js"],"Header"]
+3:I[35583,["/_next/static/chunks/fee981642db877e2.js","/_next/static/chunks/8c134e997e581c1a.js","/_next/static/chunks/6e3125cda1f23d54.js"],"Image"]
+4:I[67002,["/_next/static/chunks/a37e75f55c36a37f.js","/_next/static/chunks/bbad913631f08373.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+0:{"buildId":"721U44Q1NZDQSKUnOdtQ0","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen","children":[["$","$L2",null,{}],["$","section",null,{"className":"relative min-h-screen bg-black text-white flex items-center justify-center px-6","children":[["$","video",null,{"autoPlay":true,"loop":true,"muted":true,"playsInline":true,"className":"absolute inset-0 w-full h-full object-cover","children":["$","source",null,{"src":"/videos/homepage/homepage.mp4","type":"video/mp4"}]}],["$","div",null,{"className":"text-center absolute bottom-0","children":["$","$L3",null,{"alt":"logótipo still studio","src":{"src":"/_next/static/media/logo.b152dbb2.svg","width":218,"height":218,"blurWidth":0,"blurHeight":0},"width":"218","height":218}]}]]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/6e3125cda1f23d54.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"loading":null,"isPartial":false}
+6:null
