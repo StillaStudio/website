@@ -1,0 +1,94 @@
+{
+  "header": {
+    "brand": "Still a Studio",
+    "work": "Trabalho",
+    "about": "Sobre",
+    "contact": "Contacto"
+  },
+  "home": {
+    "logoAlt": "logótipo still studio"
+  },
+  "about": {
+    "headline": "Still a Studio. Um estúdio criativo multidisciplinar que desenha visuais que convidam o público a pausar - um ato contínuo de quietude no meio do ruído.",
+    "description1": "Somos designers gráficos e contadores de histórias numa conversa infinita com ilustração, fotografia e cinema.",
+    "description2": "Somos feitos de matéria em combustão. E acreditem, há poder em ser feito de maravilha.",
+    "practice": {
+      "title": "A Prática",
+      "step1": {
+        "title": "1. Ficar Quieto"
+      },
+      "step2": {
+        "title": "2. Reparar em Tudo",
+        "description": "Prestar atenção às possibilidades, seguir a curiosidade."
+      },
+      "step3": {
+        "title": "3. Fazer um Plano",
+        "description": "Depois dar-lhe nome. Estruturar, mas deixar espaço para explorar."
+      },
+      "step4": {
+        "title": "4. Colecionar Sementes",
+        "description": "Reunir inspiração, materiais e pequenos tesouros."
+      },
+      "step5": {
+        "title": "5. Construir com Foco",
+        "description": "Moldar ideias em algo tangível."
+      },
+      "step6": {
+        "title": "6. Respirar Fundo",
+        "description": "Dar um passo atrás, observar e deixar o trabalho falar."
+      },
+      "end": "Fim"
+    },
+    "team": {
+      "title": "Equipa"
+    },
+    "services": {
+      "title": "Serviços",
+      "artDirection": "Direção de Arte",
+      "illustration": "Ilustração",
+      "brandStrategy": "Estratégia de Marca",
+      "naming": "Naming",
+      "branding": "Branding",
+      "packaging": "Packaging",
+      "copy": "Copy",
+      "photography": "Fotografia",
+      "corporatePresentations": "Apresentações Corporativas",
+      "print": "Print",
+      "creativeDirection": "Direção Criativa",
+      "patternDesign": "Design de Padrões",
+      "editorial": "Editorial",
+      "socialMediaDesign": "Design para Redes Sociais",
+      "film": "Filme",
+      "visualIdentity": "Identidade Visual",
+      "identitySystems": "Sistemas de Identidade",
+      "webDesign": "Web Design"
+    }
+  },
+  "contact": {
+    "title": "Ainda aí?",
+    "description": "Pode enviar-nos um <email>e-mail</email>, mas também aceitamos pombos-correio.",
+    "location": "Porto, Portugal"
+  },
+  "work": {
+    "categories": {
+      "all": "Todos os Projetos",
+      "creativeDirection": "Direção Criativa",
+      "visualIdentity": "Identidade Visual",
+      "printEditorial": "Print & Editorial",
+      "illustrationPatterns": "Ilustração & Padrões",
+      "webDesign": "Web Design",
+      "film": "Filme",
+      "socialMedia": "Redes Sociais"
+    }
+  },
+  "project": {
+    "ourRole": "O Nosso Papel:",
+    "finalClient": "Cliente Final:",
+    "award": "Prémio:",
+    "date": "Data:"
+  },
+  "languageSwitcher": {
+    "en": "EN",
+    "pt": "PT"
+  }
+}

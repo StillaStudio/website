@@ -1,0 +1,94 @@
+{
+  "header": {
+    "brand": "Still a Studio",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "logoAlt": "still studio logo"
+  },
+  "about": {
+    "headline": "Still a Studio. A multidisciplinary creative studio designing visuals that invite audiences to pause - a continuous act of stillness amid the noise.",
+    "description1": "We are graphic designers and storytellers in an endless conversation with illustration, photography and film.",
+    "description2": "We are made of matter in combustion. And believe us, there is power in being made of wonder.",
+    "practice": {
+      "title": "The Practice",
+      "step1": {
+        "title": "1. Stay Still"
+      },
+      "step2": {
+        "title": "2. Notice Everything",
+        "description": "Paying attention to possibilities, following curiosity."
+      },
+      "step3": {
+        "title": "3. Make a Plan",
+        "description": "Then name it. Structuring, but leaving room to explore."
+      },
+      "step4": {
+        "title": "4. Collect Seeds",
+        "description": "Gathering inspiration, materials and tiny treasures."
+      },
+      "step5": {
+        "title": "5. Build with Focus",
+        "description": "Shaping ideas into something tangible."
+      },
+      "step6": {
+        "title": "6. Take a Breath",
+        "description": "Stepping back, observing and letting the work speak."
+      },
+      "end": "The End"
+    },
+    "team": {
+      "title": "Core Team"
+    },
+    "services": {
+      "title": "Services",
+      "artDirection": "Art Direction",
+      "illustration": "Illustration",
+      "brandStrategy": "Brand Strategy",
+      "naming": "Naming",
+      "branding": "Branding",
+      "packaging": "Packaging",
+      "copy": "Copy",
+      "photography": "Photography",
+      "corporatePresentations": "Corporate Presentations",
+      "print": "Print",
+      "creativeDirection": "Creative Direction",
+      "patternDesign": "Pattern Design",
+      "editorial": "Editorial",
+      "socialMediaDesign": "Social Media Design",
+      "film": "Film",
+      "visualIdentity": "Visual Identity",
+      "identitySystems": "Identity Systems",
+      "webDesign": "Web Design"
+    }
+  },
+  "contact": {
+    "title": "Still Here?",
+    "description": "You can send us an <email>e-mail</email>, but we also accept carrier pigeons.",
+    "location": "Porto, Portugal"
+  },
+  "work": {
+    "categories": {
+      "all": "All Projects",
+      "creativeDirection": "Creative Direction",
+      "visualIdentity": "Visual Identity",
+      "printEditorial": "Print & Editorial",
+      "illustrationPatterns": "Illustration & Patterns",
+      "webDesign": "Web Design",
+      "film": "Film",
+      "socialMedia": "Social Media"
+    }
+  },
+  "project": {
+    "ourRole": "Our Role:",
+    "finalClient": "Final Client:",
+    "award": "Award:",
+    "date": "Date:"
+  },
+  "languageSwitcher": {
+    "en": "EN",
+    "pt": "PT"
+  }
+}
