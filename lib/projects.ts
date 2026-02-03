@@ -15,10 +15,20 @@ export interface MediaItem {
   controls?: boolean
 }
 
+export type ProjectCategory =
+  | 'creativeDirection'
+  | 'visualIdentity'
+  | 'printEditorial'
+  | 'illustrationPatterns'
+  | 'webDesign'
+  | 'film'
+  | 'socialMedia'
+
 export interface Project {
   id: string
   image: string
   date: string
+  categories: ProjectCategory[]
   media: MediaItem[]
   translations: {
     en: ProjectTranslation
@@ -36,6 +46,7 @@ export interface LocalizedProject {
   client: string
   award?: string
   date: string
+  categories: ProjectCategory[]
   media: MediaItem[]
   quote?: string
   quoteText?: string[]
@@ -46,6 +57,7 @@ export const projects: Project[] = [
     id: "the-new-eden",
     image: "/images/projects/eden/the-new-eden.png",
     date: "2021",
+    categories: ['creativeDirection', 'visualIdentity', 'film'],
     media: [
       { type: 'video', src: "/videos/projects/eden/1.mp4" },
       { type: 'image', src: "/images/projects/eden/2.png" },
@@ -73,15 +85,17 @@ export const projects: Project[] = [
         title: "The New Eden",
         subtitle: "Narrativas em Movimento",
         description: [
-          "The New Eden é uma coleção conceptual de uma empresa têxtil portuguesa líder em sustentabilidade têxtil. Celebra a próxima era dos tecidos naturais, impecavelmente obtidos e desenhados para honrar o planeta.",
-          "Colaborámos na narrativa visual deste projeto através de um filme curto. Premiado pelo Fashion Film Festival da Europa. O filme convidava os espectadores a explorar a promessa da empresa aos clientes globais.",
-          "Enraizado na união entre os reinos vegetal e mineral, celebra o uso de fibras naturais - algodão, cânhamo e linho - e inovações pioneiras de tingimento usando pigmentos minerais."
+          "The New Eden é uma coleção conceptual desenvolvida para uma empresa têxtil portuguesa na linha da frente da sustentabilidade europeia. Cada elemento, da fibra ao acabamento da matéria-prima é 100% rasteável, de origem certificada e concebido para honrar o planeta.",
+          "O nosso trabalho assentou na construção narrativa do projecto através de direção criativa, realização e produção de um filme - premiado pelo Fashion Film Festival - assim como o desenho de elementos gráficos que permitiram ao cliente comunicar este manifesto.",
+          "Nascida do diálogo entre os reinos vegetal e mineral, a coleção celebra o uso de fibras naturais - algodão, cânhamo e linho - e processos inovadores de tingimento com pigmentos minerais."
         ],
-        role: "Direção Criativa, Filme e Gráfico",
+        role: "Design Gráfico, Direção Criativa e Filme",
         client: "Adalberto, Portugal",
-        award: "Melhor Realizador, Fashion Film Festival 2021",
-        quoteText: ["Mais do que uma tendência, The New Eden é um manifesto: um apelo ao regresso aos recursos naturais com consciência e intenção. Se o jardim do Éden pertence ao mito, o nosso planeta permanece - o único Éden que nos resta, e aquele que devemos proteger. Convida-nos a redescobrir o ritmo da Terra e a lembrar que a verdadeira inovação começa quando abrandamos o suficiente para ouvir."],
-        quote: "Este é The New Eden, vulgarmente conhecido como Planeta Terra. Cuida dele.",
+        award: "Melhor Realização, Fashion Film Festival, 2021",
+        quoteText: [
+          "Mais do que uma tendência, The New Eden afirma-se como um manifesto: um apelo a um regresso consciente e intencional aos recursos naturais. Se o Jardim do Éden pertence ao imaginário, o planeta que habitamos continua a ser o nosso verdadeiro jardim - o único que temos e aquele que importa preservar. É um convite para voltar a escutar o ritmo da terra e a reconhecer que a verdadeira inovação nasce quando desaceleramos e aprendemos a ouvir."
+        ],
+        quote: "The New Eden. Nome vulgar? Planeta Terra. Preserva-o.",
       }
     }
   },
@@ -89,6 +103,7 @@ export const projects: Project[] = [
     id: "gamanatura",
     image: "/images/projects/gamanatura/gamanatura.png",
     date: "2025",
+    categories: ['creativeDirection', 'visualIdentity', 'printEditorial', 'illustrationPatterns'],
     media: [
       { type: 'image', src: "/images/projects/gamanatura/1.png" },
       { type: 'image', src: "/images/projects/gamanatura/2.png" },
@@ -121,16 +136,16 @@ export const projects: Project[] = [
         title: "Gamanatura",
         subtitle: "Branding Premium",
         description: [
-          "A Gamanatura é uma marca portuguesa de têxteis-lar com mais de 30 anos de história, enraizada no mercado ibérico. Ao evoluir para um posicionamento de luxo refinado, expandindo-se para além da roupa de cama para a moda e elevando a qualidade dos produtos, a marca direcionou-se para mercados seletivos como Itália, Estados Unidos e Emirados Árabes Unidos.",
-          "Colaborámos com a Gamanatura para redefinir a sua direção criativa em toda a comunicação da marca, incluindo design gráfico, packaging, fotografia e web design.",
-          "Este novo capítulo traduziu-se numa nova expressão de marca: um tom de voz confiante e sofisticado, uma identidade visual contemporânea e uma estrutura narrativa clara que fortalece a conexão emocional. Aplicado consistentemente em todos os pontos de contacto, o nosso trabalho estabelece uma presença distinta e duradoura, posicionando a Gamanatura como uma marca de luxo moderna."
+          "A Gamanatura é uma marca portuguesa de têxteis-lar com mais de 30 anos de história, enraizada no mercado ibérico. À medida que evolui para um posicionamento de luxo -  expandindo-se da roupa de cama para a moda - a marca começa a ser comercializada em mercados como Itália, Estados Unidos e Emirados Árabes Unidos.",
+          "Trabalhámos com a Gamanatura na construção de uma nova direção criativa aplicada a todos os pontos de comunicação da marca, do design gráfico ao packaging, fotografia e web design.",
+          "Este novo capítulo traduziu-se numa nova marca: agora com um tom de voz mais sofisticado, uma identidade visual contemporânea, e uma estrutura de storytelling clara que reforça a ligação emocional. Aplicado de forma consistente em todos os pontos de contacto, o nosso trabalho constrói uma presença distinta, posicionando a Gamanatura como uma marca de luxo moderna."
         ],
-        role: "Branding, Direção Criativa, Design Gráfico, Ilustração, Packaging, Fotografia e Webdesign",
+        role: "Branding, Design Gráfico, Direção Criativa, Fotografia, Ilustração, Packaging e Web Design",
         client: "Gamanatura, Portugal",
         quoteText: [
-          "Ao desenvolver o packaging, o nosso objetivo era honrar a história da marca enquanto projetávamos uma visão clara para o seu futuro. Começámos por pintar à mão uma série de elementos-chave do universo Gamanatura. Estas ilustrações foram depois reunidas num intrincado padrão toile de jouy.",
-          "A natureza artesanal da obra foi central no processo. Para elevar o resultado final e alcançar um acabamento verdadeiramente luxuoso e detalhado, combinámos o padrão ilustrado com estampagem a quente e detalhes em relevo, transformando o packaging num objeto tátil e premium.",
-          "O website foi desenhado com uma abordagem limpa, contemporânea e editorial, priorizando a clareza e a contenção para deixar a imagem e a narrativa liderar."
+          "No desenvolvimento do packaging, o nosso objectivo era não só honrar a história da marca, como projectar uma visão para o seu futuro. Começámos por pintar à mão uma série de elementos-chave do universo da Gamanatura, que depois se intrincaram num padrão estilo Toile de Jouy.",
+          "A natureza artesanal do trabalho esteve sempre no centro de todo o processo. Para enriquecer o resultado final e alcançar um acabamento luxuoso e orientado ao detalhe, combinámos o padrão ilustrado com aplicação de foil e relevo, que se traduziu num objeto tátil com aspecto premium.",
+          "O website foi desenvolvido a partir de uma visão contemporânea, em que a simplicidade assume papel central, permitindo que a imagem e a narrativa da marca se destaquem."
         ]
       }
     }
@@ -139,6 +154,7 @@ export const projects: Project[] = [
     id: "palestine-poster",
     image: "/images/projects/palestine/palestine-poster.png",
     date: "2023",
+    categories: ['webDesign'],
     media: [
       { type: 'image', src: "/images/projects/palestine/1.png" },
       { type: 'image', src: "/images/projects/palestine/2.png" },
@@ -164,9 +180,9 @@ export const projects: Project[] = [
         title: "Palestine Poster Archive",
         subtitle: "Arquivo Digital",
         description: [
-          "Palestine Poster Archive é um projeto de web design centrado no redesign de um arquivo digital dedicado a colecionar e preservar cartazes palestinianos. Numa altura em que o povo palestiniano enfrenta uma ameaça existencial à sua continuidade, salvaguardar o património gráfico torna-se mais do que um ato de documentação - é um gesto político e cultural.",
-          "O nosso trabalho focou-se em repensar a estrutura visual e experiência de utilizador do website, dando clareza, dignidade e visibilidade a uma poderosa coleção de narrativas visuais. O redesign reforça o papel do arquivo como repositório vivo de resistência, memória e identidade, assegurando que estas expressões gráficas continuem a ser vistas, acedidas e lembradas.",
-          "Todos os cartazes e materiais visuais apresentados no arquivo são reproduzidos apenas para fins de arquivo e educacionais e permanecem propriedade intelectual dos seus autores originais, designers ou instituições associadas."
+          "Palestine Poster Archive é um projeto de web design que assenta na reformulação de um arquivo digital dedicado à recolha e preservação de cartazes palestinianos. Num contexto em que o povo palestiniano vê a sua continuidade ameaçada, a preservação desta herança gráfica assume-se como algo que vai muito além do registo histórico - é, também, um ato político e cultural.",
+          "O trabalho desenvolveu-se a partir da reorganização da estrutura visual e da experiência do utilizador do website, procurando dar clareza, dignidade e visibilidade a um acervo visual de grande força simbólica. O novo desenho reforça o arquivo enquanto espaço vivo de memória, resistência e identidade, assegurando que estas expressões gráficas permanecem acessíveis e presentes.",
+          "Todos os cartazes e materiais visuais apresentados no arquivo são reproduzidos exclusivamente para fins arquivísticos e educativos, permanecendo propriedade intelectual dos seus autores, designers ou instituições associadas."
         ],
         role: "Web Design",
         client: "Projeto pessoal",
@@ -177,6 +193,7 @@ export const projects: Project[] = [
     id: "zara-home",
     image: "/images/projects/zara/zara-home.png",
     date: "2018-2025",
+    categories: ['illustrationPatterns'],
     media: [
       { type: 'video', src: "/videos/projects/zara/1.mp4" },
       { type: 'image', src: "/images/projects/zara/2.png" },
@@ -199,9 +216,9 @@ export const projects: Project[] = [
         title: "Zara Home Series",
         subtitle: "Design de Padrões",
         description: [
-          "A Zara Home é uma marca global de decoração e têxteis para o lar, parte do grupo espanhol Inditex. É conhecida pelas suas coleções contemporâneas e presença em mercados mundiais, com centenas de lojas e alcance online em mais de 60 países. Desde 2018, em linha com a sua direção criativa, temos desenvolvido uma série de padrões para os seus produtos. Para além de motivos contemporâneos, o nosso trabalho também explora padrões mais tradicionais, como paisley e desenhos florais.",
+          "A Zara Home é uma marca de têxteis-lar e decoração que faz parte do grupo espanhol Inditex. Reconhecida pelas suas coleções contemporâneas e pela forte presença internacional, tem centenas de lojas físicas e uma plataforma online ativa em mais de 60 países. Desde 2018, e em colaboração com a direção criativa da marca, temos vindo a desenvolver uma série de padrões para os seus produtos. O nosso trabalho centra-se essencialmente na reinterpretação de padrões tradicionais, como paisleys e motivos florais.",
         ],
-        role: "Ilustração e Design de Padrões",
+        role: "Design de Padrões e Ilustração",
         client: "Inditex, Espanha",
       }
     }
@@ -210,6 +227,7 @@ export const projects: Project[] = [
     id: "textile-solutions",
     image: "/images/projects/adalberto/adalberto-solutions.png",
     date: "2024",
+    categories: ['creativeDirection', 'visualIdentity', 'printEditorial', 'socialMedia'],
     media: [
       { type: 'image', src: "/images/projects/adalberto/1.png" },
       { type: 'video', src: "/videos/projects/adalberto/2.mp4" },
@@ -236,13 +254,13 @@ export const projects: Project[] = [
         title: "Adalberto Textile Solutions",
         subtitle: "Têxteis do Amanhã",
         description: [
-          "A Adalberto Textile Solutions é uma empresa têxtil portuguesa líder na vanguarda da sustentabilidade na Europa. Colaborámos com a Adalberto enquanto evoluía de uma casa de impressão fundada em 1969 para um negócio global e tecnológico que engenharia os têxteis do amanhã: a equipa por trás da primeira máscara COVID tech certificada da indústria e uma série de inovações sustentáveis.",
-          "O nosso rebranding foi construído para comunicar esse salto: preservando o património reconhecível do logótipo original enquanto reenquadrava tudo à sua volta - uma direção criativa mais afiada, uma linguagem fotográfica intencional, ilustrações personalizadas e um sistema tipográfico refinado que se lê como técnico, confiante e contemporâneo.",
+          "A Adalberto Textile Solutions (est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
+          "O rebranding foi pensado para comunicar o salto evolutivo: preservar a herança do logótipo original, já reconhecido no mercado, mas redefinindo tudo o que o rodeia - uma direção criativa contemporânea e orientada para a visão tecnológica, uma linguagem fotográfica e ilustrações alinhadas com o novo storytelling, assim como um novo sistema tipográfico, agora mais refinado.",
         ],
-        role: "Branding, Direção Criativa, Design Gráfico, Ilustração e Redes Sociais",
+        role: "Branding, Design Gráfico, Direção Criativa, Ilustração e Redes Sociais",
         client: "Adalberto Textile Solutions, Portugal",
-        quoteText: ["A nova identidade introduz uma voz fresca, ousada e confiante que equilibra legado com modernidade, sinalizando tanto confiança como ambição. Entregue através de sistemas de identidade visual, design gráfico, packaging e conteúdo para redes sociais, o trabalho posiciona a Adalberto não apenas como fabricante, mas como parceiro tecnológico orientado por uma missão que redefine a narrativa têxtil para criar impacto positivo mensurável."],
-        quote: "Construído sobre Legado. Impulsionado pelo Futuro.",
+        quoteText: ["A nova identidade introduz um tom de voz seguro, que equilibra legado e modernidade, assim como transmite confiança e ambição. Aplicado de forma transversal aos sistemas de identidade visual, design gráfico, packaging e conteúdos para redes sociais, o trabalho posiciona a Adalberto não apenas como um produtor, mas como um parceiro tecnológico orientado por propósito, empenhado em redefinir a narrativa têxtil e em gerar um impacto positivo no mundo."],
+        quote: "Assentes na História. Impulsionados pelo futuro.",
       }
     }
   },
@@ -250,6 +268,7 @@ export const projects: Project[] = [
     id: "bouchara",
     image: "/images/projects/bouchara/bouchara-series.png",
     date: "2023",
+    categories: ['illustrationPatterns'],
     media: [
       { type: 'video', src: "/videos/projects/bouchara/1.mp4" },
       { type: 'video', src: "/videos/projects/bouchara/2.mp4" },
@@ -274,9 +293,9 @@ export const projects: Project[] = [
         title: "Bouchara Series",
         subtitle: "Design de Padrões",
         description: [
-          "A Bouchara é uma histórica empresa francesa de têxteis-lar e decoração, fundada em 1899, com uma presença de longa data no mercado francês. Desde 2018, temos desenvolvido uma série de padrões para os seus produtos, criados em linha com a sua direção criativa. Os designs são pintados à mão, impulsionados por movimento e conexões em camadas, resultando em composições dinâmicas que parecem ganhar vida.",
+          "A Bouchara é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
         ],
-        role: "Ilustração e Design de Padrões",
+        role: "Design de Padrões e Ilustração",
         client: "Doucheira",
       }
     }
@@ -285,6 +304,7 @@ export const projects: Project[] = [
     id: "spago",
     image: "/images/projects/spago/spago.png",
     date: "2023",
+    categories: ['printEditorial'],
     media: [
       { type: 'image', src: "/images/projects/spago/1.png" },
       { type: 'video', src: "/videos/projects/spago/2.mp4" },
@@ -309,11 +329,10 @@ export const projects: Project[] = [
         title: "Spago Mangiabile",
         subtitle: "Narrativa Gráfica",
         description: [
-          "Spago Mangiabile é um projeto pessoal nascido da exploração gráfica. Materializado como um livro editorial, o projeto inspira-se nos cadernos de invenções e receitas de Leonardo da Vinci, reinterpretando-os através de uma lente contemporânea.",
-          "Refletindo a mentalidade interdisciplinar de Leonardo - onde arte, ciência e engenharia coexistem - o trabalho explora o tom lúdico e satírico encontrado no Codex Romanoff, tocando na culinária, etiqueta à mesa e comportamento social durante o Renascimento.",
-          "Através de personagens ficcionalizadas do mundo de Leonardo e referências à comida como marcador de poder e estrutura social, Spago Mangiabile torna-se uma exploração visual e conceptual da gastronomia, sociedade e comportamento humano, onde narrativa histórica e exploração gráfica se encontram."
+          "Spago Mangiabile é um projeto pessoal que surge da exploração gráfica. Concretizado sob a forma de um livro editorial, o trabalho parte dos cadernos de engenhos e receitas de Leonardo da Vinci para propor uma leitura contemporânea do seu universo.",
+          "Inspirado pela sua abordagem interdisciplinar - onde arte, ciência e engenharia se cruzam - o projeto recupera o carácter lúdico e irónico presente no Codex Romanoff, refletindo sobre o cozinhar, o estar à mesa e os comportamentos sociais no período renascentista. Através de figuras emblemáticas do círculo de Leonardo e da alimentação enquanto elemento de distinção social e poder, Spago Mangiabile constrói uma narrativa visual que cruza história, cultura e exploração gráfica.",
         ],
-        role: "Desenvolvimento de Conceito, Design Gráfico e Ilustração",
+        role: "Design Gráfico, Desenvolvimento de Conceito e Ilustração",
         client: "Projeto Pessoal",
       }
     }
@@ -322,6 +341,7 @@ export const projects: Project[] = [
     id: "elevique",
     image: "/images/projects/elevique/elevique.png",
     date: "2025",
+    categories: ['visualIdentity', 'socialMedia'],
     media: [
       { type: 'video', src: "/videos/projects/elevique/1.mp4" },
       { type: 'image', src: "/images/projects/elevique/2.png" },
@@ -346,10 +366,10 @@ export const projects: Project[] = [
         title: "Elevique",
         subtitle: "Comunicação Visual",
         description: [
-          "A Elevique é uma agência totalmente digital focada em performance, trabalhando com empresas em Portugal e nos Estados Unidos para gerar leads qualificados e consistentes. Fundamentada em dados e estratégia, a agência combina SEO, Google Ads e Meta Ads para ajudar os clientes a alcançar audiências prontas a converter, sempre com foco claro no retorno do investimento.",
-          "O nosso trabalho centrou-se no desenvolvimento da identidade visual e templates de redes sociais da Elevique, criando um sistema claro e coeso que suporta o seu propósito e permite uma comunicação confiante e eficaz em todos os canais digitais.",
+          "A Elevique é uma agência focada em performance digital, que trabalha com negócios em Portugal e nos Estados Unidos para gerar leads qualificadas de forma consistente. Com base em dados e estratégia, a agência combina SEO, Google Ads, e Meta Ads para ajudar os seus clientes a chegar a públicos com intenção real de compra, mantendo sempre o foco no retorno sobre o investimento.",
+          "O nosso trabalho centrou-se no desenvolvimento da identidade visual da Elevique e de templates para redes sociais, criando um sistema claro e coeso que apoia o seu propósito e facilita uma comunicação eficaz.",
         ],
-        role: "Design para Redes Sociais e Identidade Visual",
+        role: "Identidade Visual e Redes Sociais",
         client: "Elevique, Portugal",
       }
     }
@@ -358,6 +378,7 @@ export const projects: Project[] = [
     id: "fine-detail",
     image: "/images/projects/fine/fine-detail.png",
     date: "2024 - 2025",
+    categories: ['illustrationPatterns'],
     media: [
       { type: 'video', src: "/videos/projects/fine/1.mp4" },
       { type: 'image', src: "/images/projects/fine/2.png" },
@@ -383,12 +404,12 @@ export const projects: Project[] = [
         title: "Fine Detail Series",
         subtitle: "Design de Padrões",
         description: [
-          "Fine Detail Series é uma coleção de estampas pintadas à mão desenvolvida para a Gamanatura, nascida de um profundo sentido de maravilha pela beleza do mundo natural. Como humanos, instintivamente encontramos paz nas formas orgânicas, e estes padrões emergem dessa busca silenciosa - uma procura de calma, equilíbrio e uma renovada apreciação dos detalhes da natureza.",
+          "A Fine Detail Series é uma coleção de padrões pintados à mão, desenvolvida para a Gamanatura, nascida de um profundo espanto pela beleza da natureza que nos rodeia. Enquanto humanos, encontramos paz nas formas orgânicas, e é nessa procura - pela tranquilidade, pelo equilíbrio e pelo reconhecimento da beleza natural - que estes padrões ganham forma.",
         ],
-        role: "Ilustração e Design de Padrões",
+        role: "Design Gráfico e Desenvolvimento de Conceito",
         client: "Gamanatura, Portugal",
-        quoteText: ["Cada design é o resultado de um processo lento e deliberado, moldado pela paciência, foco e anos de experiência no desenvolvimento de padrões para a indústria da moda. Enraizada na contemplação, a série traduz a complexidade subtil da natureza em composições refinadas e táteis, onde o tempo, o trabalho manual e a observação estão tão presentes quanto a imagem final em si."],
-        quote: "Celebrando a natureza, lutando pela beleza no dia-a-dia."
+        quoteText: ["Cada desenho resulta de um processo lento e consciente, moldado pela paciência, pela atenção e por anos de experiência no desenvolvimento de padrões para o universo da moda. Enraizada na contemplação, a série traduz a complexidade subtil da natureza em composições, onde o tempo, o gesto manual e a observação estão tão presentes quanto a imagem final."],
+        quote: "Celebrar a natureza, lutar pela beleza no quotidiano."
       }
     }
   },
@@ -396,6 +417,7 @@ export const projects: Project[] = [
     id: "hotel-california",
     image: "/images/projects/california/hotel-california.png",
     date: "2022",
+    categories: ['printEditorial'],
     media: [
       { type: 'image', src: "/images/projects/california/1.png" },
       { type: 'video', src: "/videos/projects/california/2.mp4" },
@@ -421,12 +443,12 @@ export const projects: Project[] = [
         title: "Hotel California",
         subtitle: "Narrativa Visual",
         description: [
-          "Hotel California é um projeto pessoal focado na construção de uma narrativa visual através de uma canção, procurando explorar a relação entre o conteúdo de uma mensagem e a forma visual que a expressa. \"Hotel California\" serve como base conceptual para uma exploração gráfica do excesso. Hedonismo, autoindulgência e o lado oculto do Sonho Americano guiam a seleção de imagens, tipografia, cor e ritmo visual, organizados numa sequência inspirada pelo contraste entre promessa e desilusão.",
+          "Hotel California é um trabalho pessoal de construção de uma narrativa visual através de uma música, procurando explorar a relação entre o conteúdo de uma mensagem e a forma visual que o expressa. “Hotel California” serve de base conceptual para uma exploração gráfica do excesso. O hedonismo, a auto-indulgência e o lado oculto do sonho americano orientam a seleção de imagens, tipografia, cor e ritmo visual, organizados numa sequência inspirada pelo contraste entre promessa e desilusão.",
         ],
-        role: "Desenvolvimento de Conceito e Design Gráfico",
+        role: "Design Gráfico e Desenvolvimento de Conceito",
         client: "Projeto Pessoal",
-        quoteText: ["A narrativa visual resultante procura amplificar a ambiguidade presente na canção, permitindo a cada leitor construir a sua própria ficção interna - um caminho onde é possível fazer check-out, mas nunca deixar completamente para trás o eco do excesso."],
-        quote: "É basicamente uma canção sobre o lado negro do sonho americano."
+        quoteText: ["A narrativa visual resultante procura amplificar a ambiguidade presente na canção, permitindo que cada leitor construa a sua própria fição interna - um percurso onde é possível fazer check-out, mas nunca abandonar totalmente o eco do excesso."],
+        quote: "It’s basically a song about the dark underbelly of the American dream and about excess in America, which is something we knew a lot about."
       }
     }
   },
@@ -434,6 +456,7 @@ export const projects: Project[] = [
     id: "psysiolim",
     image: "/images/projects/psysiolim/psysiolim.png",
     date: "2025",
+    categories: ['visualIdentity', 'socialMedia'],
     media: [
       { type: 'video', src: "/videos/projects/psysiolim/1.mp4" },
       { type: 'image', src: "/images/projects/psysiolim/2.png" },
@@ -458,10 +481,10 @@ export const projects: Project[] = [
         title: "PhysiOlim",
         subtitle: "Comunicação Visual",
         description: [
-          "A Physiolim é uma prática de fisioterapia sediada em França, fundamentada na educação, prevenção e cuidado personalizado, com forte foco no apoio a sobreviventes de cancro da mama. Guiada pela crença de que o movimento tem o poder de curar, a prática aborda a fisioterapia como um processo tanto físico como emocional.",
-          "O nosso trabalho focou-se no desenvolvimento de uma identidade visual e templates de redes sociais que pudessem alcançar a audiência certa com clareza, empatia e sensibilidade. Desenhado para comunicar cuidado, confiança e segurança, o sistema apoia a Physiolim a abordar jornadas de saúde profundamente humanas e delicadas com calor e respeito.",
+          "A Physiolim é uma clínica de fisioterapia localizada em Paris. Centrada na educação, na prevenção e no acompanhamento personalizado, com especial atenção a mulheres sobreviventes de cancro da mama, a Physiolim acredita que o movimento é uma ferramenta essencial no processo de recuperação, e entende a fisioterapia como um caminho que envolve tanto o corpo como o lado emocional.",
+          "O nosso trabalho passou pela criação da identidade visual e de templates para redes sociais, pensados para comunicar de forma clara, próxima e empática com o público-alvo. Numa área particularmente sensível como a saúde, o sistema visual foi desenvolvido para transmitir confiança, cuidado e segurança, apoiando a Physiolim na comunicação de percursos de recuperação profundamente humanos, com respeito e sensibilidade.",
         ],
-        role: "Design para Redes Sociais e Identidade Visual",
+        role: "Identidade Visual e Redes Sociais",
         client: "Physiolim, França",
       }
     }
@@ -470,6 +493,7 @@ export const projects: Project[] = [
     id: "gaspar-noe",
     image: "/images/projects/gaspar/gaspar-noe.png",
     date: "2022",
+    categories: ['webDesign'],
     media: [
       { type: 'video', src: "/videos/projects/gaspar/1.mp4" },
       { type: 'image', src: "/images/projects/gaspar/2.png" },
@@ -495,9 +519,9 @@ export const projects: Project[] = [
         title: "Gaspar Noé Film Cycle",
         subtitle: "Website Imersivo",
         description: [
-          "Gaspar Noé Film Cycle é um website desenhado para promover Crossing the Border, um programa de filmes dedicado à obra do cineasta franco-argentino Gaspar Noé. O conceito visual inspira-se diretamente no impacto visceral de Enter the Void, usando a imagem de neurónios como ponto de entrada para refletir a intensidade, desorientação e natureza transgressora do cinema de Noé.",
-          "O design abraça o excesso e a provocação como tributo à sua linguagem visual inconfundível, traduzindo a sua abordagem radical ao cinema numa experiência digital. Ancorado nas palavras do próprio Noé - \"Na verdade sou um verdadeiro viciado em cinema, é a minha principal droga.\" - o website posiciona o ciclo como um encontro imersivo com um cineasta que opera consistentemente fora da norma.",
-          "Todas as imagens e materiais audiovisuais apresentados no website permanecem propriedade intelectual dos seus respetivos detentores de direitos e são utilizados exclusivamente no contexto do projeto do website."
+          "Gaspar Noé Film Cycle é um website criado para a divulgação de Crossing the Border, um ciclo de cinema dedicado à obra do cineasta franco-argentino Gaspar Noé. O conceito visual parte do impacto de Enter the Void, usando a imagem dos neurónios como metáfora para a intensidade e o carácter fora da norma que definem o seu cinema.",
+          "O desenho do website assume o exagero e a provocação como forma de homenagem à linguagem visual de Noé, transportando essa atitude radical para o universo digital. A frase do próprio realizador - “I am actually a real film junkie, it’s my main drug.” - surge como elemento central, reforçando a natureza visceral e obsessiva da sua relação com o cinema",
+          "Todas as imagens e materiais audiovisuais apresentados no website permanecem propriedade intelectual dos respetivos titulares de direitos e são utilizados exclusivamente no contexto do projeto do website."
         ],
         role: "Web Design",
         client: "Projeto Pessoal",
@@ -508,6 +532,7 @@ export const projects: Project[] = [
     id: "gracciza",
     image: "/images/projects/gracciza/gracciza.png",
     date: "2023 - 2024",
+    categories: ['illustrationPatterns'],
     media: [
       { type: 'image', src: "/images/projects/gracciza/1.png" },
       { type: 'image', src: "/images/projects/gracciza/2.png" },
@@ -529,7 +554,7 @@ export const projects: Project[] = [
         title: "Graccioza",
         subtitle: "Ilustração Pintada à Mão",
         description: [
-          "A Graccioza é uma marca portuguesa de banho de luxo com mais de 50 anos de herança, reconhecida pelas suas toalhas premium e presença nos destinos de retalho mais prestigiados do mundo, incluindo Le Bon Marché e Harrods. A nossa colaboração focou-se exclusivamente na ilustração, desenvolvida para uma coleção inspirada no mar. Cada animal foi ilustrado como se emergisse de salpicos de água, ganhando vida através de cores ousadas e estivais e formas fluidas e expressivas. Inteiramente feitas à mão, as ilustrações capturam um sentido de movimento e frescura, traduzindo a vitalidade do oceano numa linguagem visual vibrante.",
+          "A Graccioza é uma marca portuguesa de luxo. Com mais de 50 anos de história, é reconhecida pelas suas toalhas premium, assim como pela presença em alguns dos mais prestigiados pontos de venda internacionais, como o Le Bon Marché e o Harrods. A nossa colaboração centrou-se no desenvolvimento de ilustração. Cada animal ganha forma a partir de salpicos de água, construído com cores fortes e movimentos orgânicos. Totalmente desenhadas à mão, as ilustrações captam uma sensação de frescura, traduzindo a vitalidade do oceano numa linguagem visual vibrante.",
         ],
         role: "Ilustração",
         client: "Graccioza, Portugal",
@@ -547,6 +572,7 @@ export function getProjectById(id: string, locale: 'en' | 'pt' = 'en'): Localize
     id: project.id,
     image: project.image,
     date: project.date,
+    categories: project.categories,
     media: project.media,
     title: translation.title,
     subtitle: translation.subtitle,
@@ -566,6 +592,7 @@ export function getAllProjects(locale: 'en' | 'pt' = 'en'): LocalizedProject[] {
       id: project.id,
       image: project.image,
       date: project.date,
+      categories: project.categories,
       media: project.media,
       title: translation.title,
       subtitle: translation.subtitle,

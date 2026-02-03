@@ -3,20 +3,8 @@
 import { useState } from 'react'
 import Image from "next/image"
 import { Link } from "@/i18n/routing"
-import type { LocalizedProject } from "@/lib/projects"
+import type { LocalizedProject, ProjectCategory } from "@/lib/projects"
 import { getAssetPath } from '@/lib/utils/assets'
-
-// Map category keys to role keywords (case-insensitive matching) - includes EN and PT
-const categoryRoleMap: Record<string, string[]> = {
-  all: [],
-  creativeDirection: ['Creative Direction', 'Direção Criativa'],
-  visualIdentity: ['Visual Identity', 'Branding', 'Brand Strategy', 'Identidade Visual'],
-  printEditorial: ['Print', 'Editorial', 'Packaging', 'Gráfico', 'Graphic Design', 'Design Gráfico'],
-  illustrationPatterns: ['Illustration', 'Pattern Design', 'Ilustração', 'Design de Padrões'],
-  webDesign: ['Web Design', 'Webdesign'],
-  film: ['Film', 'Filme'],
-  socialMedia: ['Social Media', 'Redes Sociais'],
-}
 
 interface ProjectsGridProps {
   projects: LocalizedProject[]
@@ -29,17 +17,14 @@ export function ProjectsGrid({ projects, categoryKeys, translations }: ProjectsG
 
   const filteredProjects = activeCategory === 'all'
     ? projects
-    : projects.filter((project) => {
-        const roleKeywords = categoryRoleMap[activeCategory] || []
-        return roleKeywords.some((keyword) =>
-          project.role.toLowerCase().includes(keyword.toLowerCase())
-        )
-      })
+    : projects.filter((project) =>
+        project.categories.includes(activeCategory as ProjectCategory)
+      )
 
   return (
     <>
       {/* Filter Categories */}
-      <div className="flex flex-wrap gap-6 text-sm">
+      <div className="flex flex-wrap gap-x-4 gap-y-2 md:gap-6 text-xs md:text-sm">
         {categoryKeys.map((categoryKey) => (
           <button
             key={categoryKey}
@@ -54,10 +39,10 @@ export function ProjectsGrid({ projects, categoryKeys, translations }: ProjectsG
       </div>
 
       {/* Projects Grid */}
-      <div className="grid md:grid-cols-2 gap-3 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3 mt-8 md:mt-10">
         {filteredProjects.map((project) => (
           <Link key={project.id} href={`/work/${project.id}`} className="group">
-            <div className="relative overflow-hidden bg-secondary h-202.5 mb-3">
+            <div className="relative overflow-hidden bg-secondary aspect-4/3 md:h-202.5 md:aspect-auto mb-3">
               <Image
                 src={getAssetPath(project.image || "/placeholder.svg")}
                 alt={project.title}
@@ -65,7 +50,7 @@ export function ProjectsGrid({ projects, categoryKeys, translations }: ProjectsG
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <h3 className="text-base font-regular mb-15">{project.title}</h3>
+            <h3 className="text-sm md:text-base font-regular mb-8 md:mb-15">{project.title}</h3>
           </Link>
         ))}
       </div>

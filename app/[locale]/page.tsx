@@ -4,6 +4,7 @@ import Logo from '@/public/images/home/logo.svg';
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import { getAssetPath } from '@/lib/utils/assets'
+import { Link } from "@/i18n/routing"
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -19,9 +20,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
           <source src={getAssetPath("/videos/homepage/homepage.mp4")} type="video/mp4" />
         </video>
-        <div className="text-center absolute bottom-0">
+        <Link href="/work" className="text-center absolute bottom-0 hover:opacity-80 transition-opacity">
           <Image alt={t('logoAlt')} src={Logo} width="218" height={218}></Image>
-        </div>
+        </Link>
       </section >
 
     </div >

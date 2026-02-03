@@ -9,38 +9,38 @@
     "logoAlt": "logótipo still studio"
   },
   "about": {
-    "headline": "Still a Studio. Um estúdio criativo multidisciplinar que desenha visuais que convidam o público a pausar - um ato contínuo de quietude no meio do ruído.",
-    "description1": "Somos designers gráficos e contadores de histórias numa conversa infinita com ilustração, fotografia e cinema.",
-    "description2": "Somos feitos de matéria em combustão. E acreditem, há poder em ser feito de maravilha.",
+    "headline": "Still a Studio. Estúdio criativo multidisciplinar a imaginar o que faz o público parar - à procura de um acto contínuo de quietude no meio do ruído.",
+    "description1": "Designers gráficos e storytellers numa infinita e séria conversa com a ilustração, a fotografia e o filme.",
+    "description2": "Somos feitos de matéria em combustão. E, acreditem, há poder em ser-se feito de espanto.",
     "practice": {
       "title": "A Prática",
       "step1": {
-        "title": "1. Ficar Quieto"
+        "title": "Parar."
       },
       "step2": {
-        "title": "2. Reparar em Tudo",
-        "description": "Prestar atenção às possibilidades, seguir a curiosidade."
+        "title": "Observar",
+        "description": "Estar atentos, perseguir a curiosidade."
       },
       "step3": {
-        "title": "3. Fazer um Plano",
-        "description": "Depois dar-lhe nome. Estruturar, mas deixar espaço para explorar."
+        "title": "Colecionar sementes",
+        "description": "Recolher inspiração, encontrar pequenos tesouros."
       },
       "step4": {
-        "title": "4. Colecionar Sementes",
-        "description": "Reunir inspiração, materiais e pequenos tesouros."
+        "title": "Definir um caminho (e depois reinventá-lo)",
+        "description": "Estruturar, mas sem perder espaço para explorar."
       },
       "step5": {
-        "title": "5. Construir com Foco",
-        "description": "Moldar ideias em algo tangível."
+        "title": "Construir com foco",
+        "description": "Trabalhar as ideias até que se tornem concretas."
       },
       "step6": {
-        "title": "6. Respirar Fundo",
-        "description": "Dar um passo atrás, observar e deixar o trabalho falar."
+        "title": "Respirar",
+        "description": "Dar um passo atrás, observar, deixar a obra falar."
       },
       "end": "Fim"
     },
     "team": {
-      "title": "Equipa"
+      "title": "Equipa Principal"
     },
     "services": {
       "title": "Serviços",
@@ -65,13 +65,13 @@
     }
   },
   "contact": {
-    "title": "Ainda aí?",
-    "description": "Pode enviar-nos um <email>e-mail</email>, mas também aceitamos pombos-correio.",
+    "title": "Still Here?",
+    "description": "Envie-nos um <email>e-mail</email>. Também aceitamos pombos-correio.",
     "location": "Porto, Portugal"
   },
   "work": {
     "categories": {
-      "all": "Todos os Projetos",
+      "all": "Todos os Projectos",
       "creativeDirection": "Direção Criativa",
       "visualIdentity": "Identidade Visual",
       "printEditorial": "Print & Editorial",
