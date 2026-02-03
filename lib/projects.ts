@@ -62,7 +62,7 @@ export const projects: Project[] = [
       { type: 'video', src: "/videos/projects/eden/1.mp4" },
       { type: 'image', src: "/images/projects/eden/2.png" },
       { type: 'video', src: "/videos/projects/eden/3.mp4", controls: true },
-      { type: 'video', src: "/videos/projects/eden/4.mp4" },
+      { type: 'image', src: "/images/projects/eden/4.png" },
       { type: 'video', src: "/videos/projects/eden/5.mp4" },
       { type: 'video', src: "/videos/projects/eden/6.mp4" },
     ],
