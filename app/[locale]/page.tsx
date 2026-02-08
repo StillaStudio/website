@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import Image from "next/image"
-import Logo from '@/public/images/home/logo.svg';
+import Logo from '@/public/images/home/logo.png';
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 import { getAssetPath } from '@/lib/utils/assets'
