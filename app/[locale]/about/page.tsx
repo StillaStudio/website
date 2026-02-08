@@ -6,6 +6,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const { locale } = await params
   setRequestLocale(locale)
   const t = await getTranslations('about')
+  const tContact = await getTranslations('contact')
 
   return (
     <div className="min-h-screen">
@@ -121,6 +122,34 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
         </section>
       </main>
+      <footer className="border-t border-white/10 py-8 px-6">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
+          <div>
+            <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
+              hello@still-a-studio.com
+            </a>
+          </div>
+          <div>{tContact('location')}</div>
+          <div className="flex gap-6">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
