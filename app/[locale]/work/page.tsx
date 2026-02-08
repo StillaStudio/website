@@ -19,6 +19,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
   const { locale } = await params
   setRequestLocale(locale)
   const t = await getTranslations('work')
+  const tContact = await getTranslations('contact')
   const projects = getAllProjects(locale as 'en' | 'pt')
 
   // Build translations object for client component
@@ -40,6 +41,34 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
           />
         </div>
       </main>
+      <footer className="py-8 px-6">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
+          <div>
+            <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
+              hello@still-a-studio.com
+            </a>
+          </div>
+          <div>{tContact('location')}</div>
+          <div className="flex gap-6">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
