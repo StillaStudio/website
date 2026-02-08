@@ -37,7 +37,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           <div className="container mx-auto max-w-5xl">
             <h3 className="text-4xl md:text-5xl font-light text-center mb-24 serif">{t('practice.title')}</h3>
 
-            <div className="grid md:grid-cols-2 gap-x-32 gap-y-8">
+            <div className="grid md:grid-cols-2 gap-x-20 gap-y-6">
               <div>
                 <h4 className="text-lg font-light mb-3">{t('practice.step1.title')}</h4>
               </div>
