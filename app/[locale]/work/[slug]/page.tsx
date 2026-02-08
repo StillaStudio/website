@@ -28,10 +28,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#FDFCF5]">
       <Header dark />
 
-      <main className="pt-17">
+      <main className="pt-17 bg-[#FDFCF5]">
         {/* Project Hero */}
         <div className="px-6 mb-30 mt-20">
           <div className="container mx-auto max-w-4xl text-center">
@@ -166,7 +166,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
           </div>
         ))}
       </main>
-      <footer className="py-8 px-6">
+      <footer className="py-8 px-6 bg-[#FDFCF5]">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
             <div>
               <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
