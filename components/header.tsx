@@ -29,7 +29,7 @@ export function Header({dark}: {dark?: boolean}) {
                 whiteSpace: 'nowrap',
               }}
             >
-              Creative{' '}
+               Creative {' '}
             </span>
             <span>Studio</span>
           </span>
