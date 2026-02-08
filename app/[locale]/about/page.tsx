@@ -29,7 +29,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </section>
 
         {/* Blue Section */}
-        <section className="bg-[url(/website/images/home/hero-image.png)] bg-center bg-cover bg-no-repeat h-[800px]">
+        <section className="bg-[url(/website/images/home/hero-image.png)] bg-center bg-contain bg-no-repeat h-[800px]">
           <div className="container mx-0">
           </div>
         </section>
