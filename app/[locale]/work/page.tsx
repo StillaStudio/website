@@ -29,10 +29,10 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#FDFCF5]">
       <Header dark/>
 
-      <main className="pt-24 pb-20 px-6">
+      <main className="pt-24 pb-20 px-6 bg-[#FDFCF5]">
         <div className="container mx-auto">
           <ProjectsGrid
             projects={projects}
@@ -41,7 +41,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
           />
         </div>
       </main>
-      <footer className="py-8 px-6">
+      <footer className="py-8 px-6 bg-[#FDFCF5]">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
           <div>
             <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
