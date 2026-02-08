@@ -14,23 +14,24 @@ export function Header({dark}: {dark?: boolean}) {
       <div className="container mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-base md:text-2xl font-regular relative inline-block"
+          className="text-base md:text-2xl font-normal relative"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <span className="inline-block">
-            Still a{' '}
+          <span className="inline-flex items-baseline">
+            <span>Still a </span>
             <span
-              className="inline-block transition-all duration-300 ease-in-out"
+              className="transition-all duration-300 ease-in-out overflow-hidden"
               style={{
                 opacity: isHovered ? 1 : 0,
-                width: isHovered ? 'auto' : '0px',
-                overflow: 'hidden',
+                maxWidth: isHovered ? '100px' : '0',
+                fontWeight: 300,
+                whiteSpace: 'nowrap',
               }}
             >
               Creative{' '}
             </span>
-            <span className="inline-block">Studio</span>
+            <span>Studio</span>
           </span>
         </Link>
 
