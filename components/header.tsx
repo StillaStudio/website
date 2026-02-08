@@ -19,7 +19,7 @@ export function Header({dark}: {dark?: boolean}) {
           onMouseLeave={() => setIsHovered(false)}
         >
           <span className="inline-flex items-baseline">
-            <span>Still a </span>
+            <span>Still a {'\u00A0'}</span>
             <span
               className="transition-all duration-200 ease-in-out overflow-hidden inline-block"
               style={{
@@ -29,7 +29,7 @@ export function Header({dark}: {dark?: boolean}) {
                 whiteSpace: 'nowrap',
               }}
             >
-              {'\u00A0'}Creative{'\u00A0'}
+              Creative{'\u00A0'}
             </span>
             <span>Studio</span>
           </span>
