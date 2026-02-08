@@ -63,7 +63,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
           <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-16">
             <div>
               {project.description.map((paragraph, index) => (
-                <p key={index} className="text-base mb-8">
+                <p key={index} className="text-xl mb-8 leading-relaxed">
                   {index === 0 ? (
                     <>
                       <span className="font-medium">{project.title}</span> {paragraph.replace(project.title, "")}
@@ -75,23 +75,23 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
               ))}
             </div>
 
-            <div className="space-y-4 text-sm">
+            <div className="space-y-4 text-lg">
               <div>
-                <p className="text-muted-foreground mb-1">{t('ourRole')}</p>
+                <p className="font-bold mb-1">{t('ourRole')}</p>
                 <p>{project.role}</p>
               </div>
               <div>
-                <p className="text-muted-foreground mb-1">{t('finalClient')}</p>
+                <p className="font-bold mb-1">{t('finalClient')}</p>
                 <p>{project.client}</p>
               </div>
               {project.award && (
                 <div>
-                  <p className="text-muted-foreground mb-1">{t('award')}</p>
+                  <p className="font-bold mb-1">{t('award')}</p>
                   <p>{project.award}</p>
                 </div>
               )}
               <div>
-                <p className="text-muted-foreground mb-1">{t('date')}</p>
+                <p className="font-bold mb-1">{t('date')}</p>
                 <p>{project.date}</p>
               </div>
             </div>
@@ -127,13 +127,13 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
         {/* Quote */}
         {project.quoteText && (
           <div className="container my-30 max-w-5xl mx-auto">
-            <div className="relative max-w-1/2 mb-[110px]">
+            <div className="relative max-w-1/2 mb-[110px] text-left">
               {project.quoteText && project.quoteText?.length > 0 && project.quoteText.map((paragraph, index) => (
                 <p key={index} className="text-[24px] mb-[24px]">{paragraph}</p>
               ))}
             </div>
             {project.quote && (
-              <blockquote className="ml-auto max-w-3/4 text-[40px] font-light leading-relaxed serif">
+              <blockquote className="ml-auto max-w-3/4 text-[40px] font-light leading-relaxed serif text-right">
                 "{project.quote}"
               </blockquote>
             )}

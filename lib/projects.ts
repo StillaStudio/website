@@ -69,10 +69,10 @@ export const projects: Project[] = [
     translations: {
       en: {
         title: "The New Eden",
-        subtitle: "Moving Narratives",
+        subtitle: "Moving Narrative",
         description: [
-          "The New Eden is a concept collection by a leading Portuguese textile company of sustainability in textiles. It celebrates the next era of natural fabrics, impeccably sourced, and designed to honor the planet.",
-          "We collaborated on the visual narrative of this project through a short film. Awarded by the Fashion Film Festival of Europe. The film invited viewers to explore the company's promise to global clients.",
+          "The New Eden is a concept collection by a leading Portuguese textile company at the forefront of sustainability in Europe. Every element, from fiber to finish, is 100% traceable, responsibly sourced, and designed to honor the planet.",
+          "We collaborated on the visual narrative of this project through creative direction, film - awarded by the Fashion Film Festival - and the design of graphic elements that articulate the company's purpose to global clients.",
           "Rooted in the union between the plant and mineral kingdoms, it celebrates the use of natural fibers - cotton, hemp, and linen - and pioneering dyeing innovations using mineral pigments."
         ],
         role: "Creative Direction, Film and Graphic",
