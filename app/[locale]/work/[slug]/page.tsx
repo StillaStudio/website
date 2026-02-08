@@ -167,7 +167,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
         ))}
       </main>
       <footer className="border-t border-white/10 py-8 px-6">
-          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+          <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
             <div>
               <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
                 hello@still-a-studio.com
