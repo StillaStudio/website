@@ -75,7 +75,7 @@ export const projects: Project[] = [
           "We collaborated on the visual narrative of this project through creative direction, film - awarded by the Fashion Film Festival - and the design of graphic elements that articulate the company's purpose to global clients.",
           "Rooted in the union between the plant and mineral kingdoms, it celebrates the use of natural fibers - cotton, hemp, and linen - and pioneering dyeing innovations using mineral pigments."
         ],
-        role: "Creative Direction, Film and Graphic",
+        role: "Creative Direction, Film and Graphic Design",
         client: "Adalberto, Portugal",
         award: "Best Director, Fashion Film Festival 2021",
         quoteText: ["More than a trend, The New Eden is a manifesto: a call to return to natural resources with awareness and intention. If the garden of Eden belongs to myth, our planet remains - the only Eden we have left, and the one we must protect. It invites us to rediscover the rhythm of the Earth, and to remember that true innovation begins when we slow down enough to listen."],

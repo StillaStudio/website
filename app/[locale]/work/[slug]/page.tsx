@@ -60,10 +60,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
 
         {/* Project Info */}
         <div className="px-6 my-30">
-          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-24">
+          <div className="container mx-auto max-w-6xl grid md:grid-cols-2 gap-24">
             <div>
               {project.description.map((paragraph, index) => (
-                <p key={index} className="text-xl mb-8 leading-relaxed">
+                <p key={index} className="text-[32px] mb-8 leading-relaxed">
                   {index === 0 ? (
                     <>
                       <span className="font-medium">{project.title}</span> {paragraph.replace(project.title, "")}
@@ -75,7 +75,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
               ))}
             </div>
 
-            <div className="space-y-4 text-lg">
+            <div className="space-y-4 text-[32px]">
               <div>
                 <p className="font-bold mb-1">{t('ourRole')}</p>
                 <p>{project.role}</p>
