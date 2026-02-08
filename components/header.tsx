@@ -19,17 +19,17 @@ export function Header({dark}: {dark?: boolean}) {
           onMouseLeave={() => setIsHovered(false)}
         >
           <span className="inline-flex items-baseline">
-            <span>Still a{' '}</span>
+            <span>Still a </span>
             <span
-              className="transition-all duration-300 ease-in-out overflow-hidden"
+              className="transition-all duration-200 ease-in-out overflow-hidden inline-block"
               style={{
                 opacity: isHovered ? 1 : 0,
-                maxWidth: isHovered ? '100px' : '0',
+                maxWidth: isHovered ? '120px' : '0',
                 fontWeight: 300,
                 whiteSpace: 'nowrap',
               }}
             >
-               Creative {' '}
+              Creative{'\u00A0'}
             </span>
             <span>Studio</span>
           </span>
