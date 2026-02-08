@@ -10,8 +10,8 @@ export function Header({dark}: {dark?: boolean}) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <header className={`${!dark? "text-white bg-transparent" : 'bg-background'} fixed top-0 left-0 right-0 z-50`}>
-      <div className="container mx-auto px-6 py-3 md:py-4 flex items-center justify-between">
+    <header className={`${!dark? "text-white bg-transparent" : 'bg-background'} fixed top-0 left-0 right-0 z-50 px-6 py-3 md:py-4`}>
+      <div className="container mx-auto flex items-center justify-between">
         <Link
           href="/"
           className="text-base md:text-2xl font-normal relative"

@@ -42,15 +42,20 @@ export function ProjectsGrid({ projects, categoryKeys, translations }: ProjectsG
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3 mt-8 md:mt-10">
         {filteredProjects.map((project) => (
           <Link key={project.id} href={`/work/${project.id}`} className="group">
-            <div className="relative overflow-hidden bg-secondary aspect-4/3 md:h-202.5 md:aspect-auto mb-3">
+            <div className="relative overflow-hidden bg-secondary aspect-4/3 md:h-202.5 md:aspect-auto mb-8 md:mb-15">
               <Image
                 src={getAssetPath(project.image || "/placeholder.svg")}
                 alt={project.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className="object-cover transition-transform duration-500"
               />
+              {/* Black overlay on hover */}
+              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {/* Title overlay */}
+              <h3 className="absolute inset-0 flex items-center justify-center text-white text-sm md:text-base font-regular opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 px-6 text-center">
+                {project.title}
+              </h3>
             </div>
-            <h3 className="text-sm md:text-base font-regular mb-8 md:mb-15">{project.title}</h3>
           </Link>
         ))}
       </div>
