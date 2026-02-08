@@ -21,7 +21,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </h2>
 
             <div className="flex justify-end">
-              <p className="text-2xl font-normal leading-relaxed max-w-2xl text-right">
+              <p className="text-2xl font-normal leading-relaxed max-w-2xl text-justify">
                 We are graphic designers and storytellers in an endless conversation with illustration, photography and film.
               </p>
             </div>
