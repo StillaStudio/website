@@ -60,7 +60,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
 
         {/* Project Info */}
         <div className="px-6 my-30">
-          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-16">
+          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-24">
             <div>
               {project.description.map((paragraph, index) => (
                 <p key={index} className="text-xl mb-8 leading-relaxed">
