@@ -16,19 +16,19 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         {/* About Section */}
         <section className="py-32 px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-4xl md:text-6xl font-light leading-tight text-balance serif mb-16">
-              {t('headline')}
-            </h2>
-
-            <div className="grid md:grid-cols-2 gap-16 mt-20">
+            <div className="grid md:grid-cols-2 gap-16">
               <div>
-                <p className="text-base leading-relaxed text-foreground/80">
-                  {t('description1')}
-                </p>
+                <h2 className="text-5xl font-normal leading-tight serif">
+                  Still a Studio. A multidisciplinary creative studio designing visuals that invite audiences to pause - a continuous act of stillness amid the noise.
+                </h2>
               </div>
-              <div>
-                <p className="text-base leading-relaxed text-foreground/80">
-                  {t('description2')}
+
+              <div className="flex flex-col gap-8">
+                <p className="text-2xl font-normal leading-relaxed">
+                  We are graphic designers and storytellers in an endless conversation with illustration, photography and film.
+                </p>
+                <p className="text-2xl font-normal leading-relaxed">
+                  We are made of matter in combustion. And believe us, there is power in being made of wonder.
                 </p>
               </div>
             </div>
