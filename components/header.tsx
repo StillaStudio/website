@@ -19,7 +19,7 @@ export function Header({dark}: {dark?: boolean}) {
           onMouseLeave={() => setIsHovered(false)}
         >
           <span className="inline-flex items-baseline">
-            <span>Still a </span>
+            <span>Still a{' '}</span>
             <span
               className="transition-all duration-300 ease-in-out overflow-hidden"
               style={{
