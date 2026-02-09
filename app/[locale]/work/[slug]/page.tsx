@@ -34,8 +34,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
       <main className="pt-17 bg-[#FDFCF5]">
         {/* Project Hero */}
         <div className="px-6 mb-30 mt-20">
-          <div className="container mx-auto max-w-4xl text-center">
-            <h1 className="text-7xl mb-4 serif">{project.title}</h1>
+          <div className="mx-auto text-center">
+            <h1 className="text-[80px] mb-4 serif">{project.title}</h1>
             <p className="text-[24px] serif">{project.subtitle}</p>
           </div>
         </div>
@@ -77,29 +77,29 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
 
             <div className="space-y-4 text-lg">
               <div>
-                <p className="font-bold mb-1">{t('ourRole')}</p>
+                <p className="font-medium mb-1">{t('ourRole')}</p>
                 <p>{project.role}</p>
               </div>
               <div>
-                <p className="font-bold mb-1">{t('finalClient')}</p>
+                <p className="font-medium mb-1">{t('finalClient')}</p>
                 <p>{project.client}</p>
               </div>
               {project.award && (
                 <div>
-                  <p className="font-bold mb-1">{t('award')}</p>
+                  <p className="font-medium mb-1">{t('award')}</p>
                   <p>{project.award}</p>
                 </div>
               )}
               <div>
-                <p className="font-bold mb-1">{t('date')}</p>
+                <p className="font-medium mb-1">{t('date')}</p>
                 <p>{project.date}</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Additional Media */}
-        {project.media.slice(1, 3).map((item, index) => (
+        {/* Additional Media - Before Quote */}
+        {project.media.slice(1, project.quotePosition || 3).map((item, index) => (
           <div key={index}>
             {item.type === 'video' ? (
               <video
@@ -133,15 +133,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
               ))}
             </div>
             {project.quote && (
-              <blockquote className="ml-auto max-w-3/4 text-[40px] font-light leading-relaxed serif text-right">
+              <blockquote className="ml-auto max-w-[743px] text-[40px] font-light leading-relaxed serif text-right">
                 "{project.quote}"
               </blockquote>
             )}
           </div>
         )}
 
-        {/* Additional Media */}
-        {project.media.slice(3).map((item, index) => (
+        {/* Additional Media - After Quote */}
+        {project.media.slice(project.quotePosition || 3).map((item, index) => (
           <div key={index}>
             {item.type === 'video' ? (
               <video
@@ -157,7 +157,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
               <div className="aspect-video relative bg-black">
                 <Image
                   src={getAssetPath(item.src || "/placeholder.svg")}
-                  alt={`${project.title} ${index + 4}`}
+                  alt={`${project.title} ${index + (project.quotePosition || 3) + 1}`}
                   fill
                   className="object-cover"
                 />
