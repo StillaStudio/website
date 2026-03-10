@@ -37,71 +37,68 @@ export function PracticeSection({ translations }: PracticeSectionProps) {
         </h3>
 
         <div className="grid md:grid-cols-2 gap-x-8 md:gap-x-24 gap-y-6 md:gap-y-12">
-          {/* Left Column: Steps 1-3 */}
-          <div className="space-y-6 md:space-y-12">
-            <div
-              onMouseEnter={() => setHoveredStep(1)}
-              onMouseLeave={() => setHoveredStep(null)}
-              className="cursor-default hover:cursor-pointer"
-            >
-              <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step1.title}</h4>
-            </div>
-
-            <div
-              onMouseEnter={() => setHoveredStep(2)}
-              onMouseLeave={() => setHoveredStep(null)}
-              className="cursor-default hover:cursor-pointer"
-            >
-              <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step2.title}</h4>
-              <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
-                {translations.step2.description}
-              </p>
-            </div>
-
-            <div
-              onMouseEnter={() => setHoveredStep(3)}
-              onMouseLeave={() => setHoveredStep(null)}
-              className="cursor-default hover:cursor-pointer"
-            >
-              <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step3.title}</h4>
-              <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
-                {translations.step3.description}
-              </p>
-            </div>
+          {/* Row 1: Step 1 & Step 4 */}
+          <div
+            onMouseEnter={() => setHoveredStep(1)}
+            onMouseLeave={() => setHoveredStep(null)}
+            className="cursor-default hover:cursor-pointer"
+          >
+            <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step1.title}</h4>
           </div>
 
-          {/* Right Column: Steps 4-6 */}
-          <div className="space-y-6 md:space-y-12">
-            <div
-              onMouseEnter={() => setHoveredStep(4)}
-              onMouseLeave={() => setHoveredStep(null)}
-              className="cursor-default hover:cursor-pointer"
-            >
-              <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step4.title}</h4>
-              <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
-                {translations.step4.description}
-              </p>
-            </div>
+          <div
+            onMouseEnter={() => setHoveredStep(4)}
+            onMouseLeave={() => setHoveredStep(null)}
+            className="cursor-default hover:cursor-pointer"
+          >
+            <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step4.title}</h4>
+            <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
+              {translations.step4.description}
+            </p>
+          </div>
 
-            <div
-              onMouseEnter={() => setHoveredStep(5)}
-              onMouseLeave={() => setHoveredStep(null)}
-              className="cursor-default hover:cursor-pointer"
-            >
-              <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step5.title}</h4>
-              <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">{translations.step5.description}</p>
-            </div>
+          {/* Row 2: Step 2 & Step 5 */}
+          <div
+            onMouseEnter={() => setHoveredStep(2)}
+            onMouseLeave={() => setHoveredStep(null)}
+            className="cursor-default hover:cursor-pointer"
+          >
+            <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step2.title}</h4>
+            <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
+              {translations.step2.description}
+            </p>
+          </div>
 
-            <div
-              onMouseEnter={() => setHoveredStep(6)}
-              onMouseLeave={() => setHoveredStep(null)}
-              className="cursor-default hover:cursor-pointer"
-            >
-              <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step6.title}</h4>
-              <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
-                {translations.step6.description}
-              </p>
-            </div>
+          <div
+            onMouseEnter={() => setHoveredStep(5)}
+            onMouseLeave={() => setHoveredStep(null)}
+            className="cursor-default hover:cursor-pointer"
+          >
+            <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step5.title}</h4>
+            <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">{translations.step5.description}</p>
+          </div>
+
+          {/* Row 3: Step 3 & Step 6 */}
+          <div
+            onMouseEnter={() => setHoveredStep(3)}
+            onMouseLeave={() => setHoveredStep(null)}
+            className="cursor-default hover:cursor-pointer"
+          >
+            <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step3.title}</h4>
+            <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
+              {translations.step3.description}
+            </p>
+          </div>
+
+          <div
+            onMouseEnter={() => setHoveredStep(6)}
+            onMouseLeave={() => setHoveredStep(null)}
+            className="cursor-default hover:cursor-pointer"
+          >
+            <h4 className="text-lg md:text-[24px] font-normal mb-2">{translations.step6.title}</h4>
+            <p className="text-sm md:text-[16px] text-[#FDFCF5] leading-relaxed">
+              {translations.step6.description}
+            </p>
           </div>
         </div>
 

@@ -256,10 +256,10 @@ export const projects: Project[] = [
         quote: "Built on Legacy. Driven by the Future.",
       },
       pt: {
-        title: "Adalberto Textile Solutions",
+        title: "A Adalberto Textile Solutions",
         subtitle: "Têxteis do Futuro",
         description: [
-          "A Adalberto Textile Solutions (est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
+          "Adalberto Textile Solutions (est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
           "O rebranding foi pensado para comunicar o salto evolutivo: preservar a herança do logótipo original, já reconhecido no mercado, mas redefinindo tudo o que o rodeia - uma direção criativa contemporânea e orientada para a visão tecnológica, uma linguagem fotográfica e ilustrações alinhadas com o novo storytelling, assim como um novo sistema tipográfico, agora mais refinado.",
         ],
         role: "Branding, Design Gráfico, Direção Criativa, Ilustração e Redes Sociais",
@@ -285,7 +285,7 @@ export const projects: Project[] = [
     ],
     translations: {
       en: {
-        title: "Bouchara Series",
+        title: "Bouchara",
         subtitle: "Pattern Design",
         description: [
           "Bouchara is a historic French home textiles and décor company, founded in 1899, with a long-standing presence in the French market. Since 2018, we have been developing a series of patterns for their products, created in line with its creative direction. The designs are handpainted, driven by movement and layered connections, resulting in dynamic compositions that seem to come to life.",
@@ -294,10 +294,10 @@ export const projects: Project[] = [
         client: "Bouchara",
       },
       pt: {
-        title: "Bouchara Series",
+        title: "A Bouchara",
         subtitle: "Design de Padrões",
         description: [
-          "A Bouchara é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
+          "Bouchara é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
         ],
         role: "Design de Padrões e Ilustração",
         client: "Bouchara",
@@ -367,10 +367,10 @@ export const projects: Project[] = [
         client: "Elevique, Portugal",
       },
       pt: {
-        title: "Elevique",
+        title: "A Elevique",
         subtitle: "Comunicação Visual",
         description: [
-          "A Elevique é uma agência focada em performance digital, que trabalha com negócios em Portugal e nos Estados Unidos para gerar leads qualificadas de forma consistente. Com base em dados e estratégia, a agência combina SEO, Google Ads, e Meta Ads para ajudar os seus clientes a chegar a públicos com intenção real de compra, mantendo sempre o foco no retorno sobre o investimento.",
+          "Elevique é uma agência focada em performance digital, que trabalha com negócios em Portugal e nos Estados Unidos para gerar leads qualificadas de forma consistente. Com base em dados e estratégia, a agência combina SEO, Google Ads, e Meta Ads para ajudar os seus clientes a chegar a públicos com intenção real de compra, mantendo sempre o foco no retorno sobre o investimento.",
           "O nosso trabalho centrou-se no desenvolvimento da identidade visual da Elevique e de templates para redes sociais, criando um sistema claro e coeso que apoia o seu propósito e facilita uma comunicação eficaz.",
         ],
         role: "Identidade Visual e Redes Sociais",
@@ -407,7 +407,7 @@ export const projects: Project[] = [
         title: "Fine Detail Series",
         subtitle: "Design de Padrões e Ilustração",
         description: [
-          "A Fine Detail Series é uma coleção de padrões pintados à mão, desenvolvida para a Gamanatura, nascida de um profundo espanto pela beleza da natureza que nos rodeia. Enquanto humanos, encontramos paz nas formas orgânicas, e é nessa procura - pela tranquilidade, pelo equilíbrio e pelo reconhecimento da beleza natural - que estes padrões ganham forma.",
+          "Fine Detail Series é uma coleção de padrões pintados à mão, desenvolvida para a Gamanatura, nascida de um profundo espanto pela beleza da natureza que nos rodeia. Enquanto humanos, encontramos paz nas formas orgânicas, e é nessa procura - pela tranquilidade, pelo equilíbrio e pelo reconhecimento da beleza natural - que estes padrões ganham forma.",
         ],
         role: "Design Gráfico e Desenvolvimento de Conceito",
         client: "Gamanatura, Portugal",
