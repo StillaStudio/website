@@ -31,7 +31,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </section>
 
         {/* Blue Section */}
-        <section className="w-full bg-[url(images\home\hero-image.png)] bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]">
+        <section className="w-full bg-[url(/images/home/hero-image.webp)] bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]">
         </section>
 
         {/* The Practice Section */}
