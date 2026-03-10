@@ -31,12 +31,12 @@ export function PracticeSection({ translations }: PracticeSectionProps) {
 
   return (
     <section className="bg-black text-white py-12 md:py-20 px-6 md:px-87.5 relative overflow-hidden min-h-200">
-      <div className="container mx-auto max-w-4xl relative z-10">
+      <div className="container mx-auto max-w-4xl relative z-10" style={{ textShadow: hoveredStep ? '0 1px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.6)' : 'none', transition: 'text-shadow 0.3s' }}>
         <h3 className="text-3xl md:text-[48px] text-center mb-12 md:mb-30.25 serif">
           {translations.title}
         </h3>
 
-        <div className="grid md:grid-cols-2 gap-x-8 md:gap-x-24 gap-y-6 md:gap-y-12">
+        <div className="grid md:grid-cols-2 gap-x-8 md:gap-x-24 gap-y-6 md:gap-y-12 text-center md:text-left">
           {/* Row 1: Step 1 & Step 4 */}
           <div
             onMouseEnter={() => setHoveredStep(1)}

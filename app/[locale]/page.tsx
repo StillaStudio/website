@@ -17,7 +17,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
       {/* Hero Section */}
       <section className="relative min-h-screen bg-black text-white flex items-center justify-center px-6">
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover">
+        {/* Mobile video */}
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover md:hidden">
+          <source src={getAssetPath("/videos/homepage/MOBILE HOMEPAGE.mp4")} type="video/mp4" />
+        </video>
+        {/* Desktop video */}
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover hidden md:block">
           <source src={getAssetPath("/videos/homepage/homepage.mp4")} type="video/mp4" />
         </video>
         <Link href="/work" className="text-center absolute bottom-0 hover:opacity-80 transition-opacity">

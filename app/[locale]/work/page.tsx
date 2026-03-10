@@ -32,7 +32,7 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
     <div className="min-h-screen bg-white">
       <Header dark/>
 
-      <main className="pt-24 pb-20 px-6 bg-white">
+      <main className="pt-24 pb-4 md:pb-20 px-6 bg-white">
         <div className="container mx-auto">
           <ProjectsGrid
             projects={projects}
@@ -43,15 +43,15 @@ export default async function WorkPage({ params }: { params: Promise<{ locale: s
       </main>
       <footer className="py-8 px-6 bg-white">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
-          <div>
+          <div className="hidden md:block">
             <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
               hello@still-a-studio.com
             </a>
           </div>
-          <div>{tContact('location')}</div>
+          <div className="hidden md:block">{tContact('location')}</div>
           <div className="flex gap-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/still.a.studio"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"

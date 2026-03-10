@@ -139,7 +139,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
         {/* Quote */}
         {project.quoteText && (
           <div className="container my-12 md:my-30 max-w-5xl mx-auto px-6">
-            <div className="relative max-w-1/2 mb-12 md:mb-[110px] text-left">
+            <div className="relative max-w-full md:max-w-1/2 mb-12 md:mb-[110px] text-left">
               {project.quoteText && project.quoteText?.length > 0 && project.quoteText.map((paragraph, index) => (
                 <p key={index} className="text-xl mb-8 leading-relaxed">{paragraph}</p>
               ))}
@@ -189,15 +189,15 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
       </main>
       <footer className="py-8 px-6 bg-white">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
-            <div>
+            <div className="hidden md:block">
               <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
                 hello@still-a-studio.com
               </a>
             </div>
-            <div>{tContact('location')}</div>
+            <div className="hidden md:block">{tContact('location')}</div>
             <div className="flex gap-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/still.a.studio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-70 transition-opacity"

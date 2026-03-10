@@ -29,15 +29,15 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
         {/* Footer */}
         <footer className="py-8 px-6">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
-            <div>
+            <div className="hidden md:block">
               <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
                 hello@still-a-studio.com
               </a>
             </div>
-            <div>{t('location')}</div>
+            <div className="hidden md:block">{t('location')}</div>
             <div className="flex gap-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/still.a.studio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:opacity-70 transition-opacity"

@@ -14,7 +14,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     <div className="min-h-screen bg-white">
       <Header dark />
 
-      <main className="pt-24 pb-20 bg-white">
+      <main className="pt-24 pb-4 md:pb-20 bg-white">
 
         {/* About Section */}
         <section className="py-16 md:py-32 px-6">
@@ -53,7 +53,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         />
 
         {/* Core Team & Services */}
-        <section className="py-16 md:py-32 px-6">
+        <section className="py-16 pb-4 md:py-32 px-6">
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-2 gap-12 md:gap-24">
               <div>
@@ -66,7 +66,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
               <div>
                 <h3 className="text-3xl md:text-[48px] mb-6 md:mb-8 serif">{t('services.title')}</h3>
-                <div className={`grid grid-cols-2 ${locale === 'pt' ? 'gap-x-14 md:gap-x-28' : 'gap-x-12 md:gap-x-24'} gap-y-3`}>
+                <div className={`grid grid-cols-1 md:grid-cols-2 ${locale === 'pt' ? 'md:gap-x-28' : 'md:gap-x-24'} gap-y-1 md:gap-y-3`}>
                   {locale === 'pt' ? (
                     <>
                       <p className="text-base md:text-[24px]">{t('services.corporatePresentations')}</p>
@@ -118,15 +118,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       </main>
       <footer className="py-8 px-6 bg-white">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
-          <div>
+          <div className="hidden md:block">
             <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">
               hello@still-a-studio.com
             </a>
           </div>
-          <div>{tContact('location')}</div>
+          <div className="hidden md:block">{tContact('location')}</div>
           <div className="flex gap-6">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/still.a.studio"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-70 transition-opacity"
