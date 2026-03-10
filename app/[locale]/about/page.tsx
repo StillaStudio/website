@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { PracticeSection } from "@/components/practice-section"
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
+import { getAssetPath } from '@/lib/utils/assets'
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -33,7 +34,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         {/* Blue Section */}
         <section
           className="w-full bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]"
-          style={{ backgroundImage: 'url(/images/home/ABOUT.webp)' }}
+          style={{ backgroundImage: `url(${getAssetPath('/images/home/ABOUT.webp')})` }}
         >
         </section>
 
