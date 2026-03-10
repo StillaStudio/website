@@ -31,7 +31,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </section>
 
         {/* Blue Section */}
-        <section className="w-full bg-[url('/images/home/ABOUT.webp')] bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]">
+        <section className="w-full bg-[url(/images/home/ABOUT.webp)] bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]">
         </section>
 
         {/* The Practice Section */}
@@ -62,7 +62,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
               <div>
                 <h3 className="text-3xl md:text-[48px] mb-6 md:mb-8 serif">{t('services.title')}</h3>
-                <div className="grid grid-cols-2 gap-x-8 md:gap-x-16 gap-y-3">
+                <div className="grid grid-cols-2 gap-x-10 md:gap-x-20 gap-y-3">
                   <p className="text-base md:text-[24px]">{t('services.artDirection')}</p>
                   <p className="text-base md:text-[24px]">{t('services.brandStrategy')}</p>
                   <p className="text-base md:text-[24px]">{t('services.branding')}</p>

@@ -259,7 +259,7 @@ export const projects: Project[] = [
         title: "A Adalberto Textile Solutions",
         subtitle: "Têxteis do Futuro",
         description: [
-          "Adalberto Textile Solutions (est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
+          "(est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
           "O rebranding foi pensado para comunicar o salto evolutivo: preservar a herança do logótipo original, já reconhecido no mercado, mas redefinindo tudo o que o rodeia - uma direção criativa contemporânea e orientada para a visão tecnológica, uma linguagem fotográfica e ilustrações alinhadas com o novo storytelling, assim como um novo sistema tipográfico, agora mais refinado.",
         ],
         role: "Branding, Design Gráfico, Direção Criativa, Ilustração e Redes Sociais",
@@ -297,7 +297,7 @@ export const projects: Project[] = [
         title: "A Bouchara",
         subtitle: "Design de Padrões",
         description: [
-          "Bouchara é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
+          "é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
         ],
         role: "Design de Padrões e Ilustração",
         client: "Bouchara",
@@ -370,7 +370,7 @@ export const projects: Project[] = [
         title: "A Elevique",
         subtitle: "Comunicação Visual",
         description: [
-          "Elevique é uma agência focada em performance digital, que trabalha com negócios em Portugal e nos Estados Unidos para gerar leads qualificadas de forma consistente. Com base em dados e estratégia, a agência combina SEO, Google Ads, e Meta Ads para ajudar os seus clientes a chegar a públicos com intenção real de compra, mantendo sempre o foco no retorno sobre o investimento.",
+          "é uma agência focada em performance digital, que trabalha com negócios em Portugal e nos Estados Unidos para gerar leads qualificadas de forma consistente. Com base em dados e estratégia, a agência combina SEO, Google Ads, e Meta Ads para ajudar os seus clientes a chegar a públicos com intenção real de compra, mantendo sempre o foco no retorno sobre o investimento.",
           "O nosso trabalho centrou-se no desenvolvimento da identidade visual da Elevique e de templates para redes sociais, criando um sistema claro e coeso que apoia o seu propósito e facilita uma comunicação eficaz.",
         ],
         role: "Identidade Visual e Redes Sociais",
@@ -401,7 +401,7 @@ export const projects: Project[] = [
         role: "Illustration and Pattern Design",
         client: "Gamanatura, Portugal",
         quoteText: ["Each design is the result of a slow, deliberate process, shaped by patience, focus and years of experience in pattern development for the fashion industry. Rooted in contemplation, the series translates nature's subtle complexity into refined, tactile compositions, where time, handwork and observation are as present as the final image itself."],
-        quote: "Celebrating nature, fighting for beauty in everyday life."
+        quote: ["Celebrating nature,", "fighting for beauty in everyday life."]
       },
       pt: {
         title: "Fine Detail Series",
@@ -448,7 +448,7 @@ export const projects: Project[] = [
         description: [
           "Hotel California é um trabalho pessoal de construção de uma narrativa visual através de uma música, procurando explorar a relação entre o conteúdo de uma mensagem e a forma visual que o expressa. “Hotel California” serve de base conceptual para uma exploração gráfica do excesso. O hedonismo, a auto-indulgência e o lado oculto do sonho americano orientam a seleção de imagens, tipografia, cor e ritmo visual, organizados numa sequência inspirada pelo contraste entre promessa e desilusão.",
         ],
-        role: "Design Gráfico e Desenvolvimento de Conceito",
+        role: "Design Gráfico",
         client: "Projecto Pessoal",
         quoteText: ["A narrativa visual resultante procura amplificar a ambiguidade presente na canção, permitindo que cada leitor construa a sua própria fição interna - um percurso onde é possível fazer check-out, mas nunca abandonar totalmente o eco do excesso."],
         quote: "It's basically a song about the dark underbelly of the American dream."
@@ -474,17 +474,17 @@ export const projects: Project[] = [
         title: "PhysiOlim",
         subtitle: "Visual Communication",
         description: [
-          "Physiolim is a France-based physiotherapy practice grounded in education, prevention and personalised care, with a strong focus on supporting breast cancer survivors. Guided by the belief that movement has the power to heal, the practice approaches physiotherapy as both a physical and emotional process.",
+          "is a France-based physiotherapy practice grounded in education, prevention and personalised care, with a strong focus on supporting breast cancer survivors. Guided by the belief that movement has the power to heal, the practice approaches physiotherapy as both a physical and emotional process.",
           "Our work focused on developing a visual identity and social media templates that could reach the right audience with clarity, empathy and sensitivity. Designed to communicate care, trust and reassurance, the system supports Physiolim in addressing deeply human and delicate health journeys with warmth and respect.",
         ],
         role: "Social Media Design and Visual Identity",
         client: "Physiolim, France",
       },
       pt: {
-        title: "PhysiOlim",
+        title: "A PhysiOlim",
         subtitle: "Comunicação Visual",
         description: [
-          "A Physiolim é uma clínica de fisioterapia localizada em Paris. Centrada na educação, na prevenção e no acompanhamento personalizado, com especial atenção a mulheres sobreviventes de cancro da mama, a Physiolim acredita que o movimento é uma ferramenta essencial no processo de recuperação, e entende a fisioterapia como um caminho que envolve tanto o corpo como o lado emocional.",
+          " é uma clínica de fisioterapia localizada em Paris. Centrada na educação, na prevenção e no acompanhamento personalizado, com especial atenção a mulheres sobreviventes de cancro da mama, a Physiolim acredita que o movimento é uma ferramenta essencial no processo de recuperação, e entende a fisioterapia como um caminho que envolve tanto o corpo como o lado emocional.",
           "O nosso trabalho passou pela criação da identidade visual e de templates para redes sociais, pensados para comunicar de forma clara, próxima e empática com o público-alvo. Numa área particularmente sensível como a saúde, o sistema visual foi desenvolvido para transmitir confiança, cuidado e segurança, apoiando a Physiolim na comunicação de percursos de recuperação profundamente humanos, com respeito e sensibilidade.",
         ],
         role: "Identidade Visual e Redes Sociais",
@@ -554,10 +554,10 @@ export const projects: Project[] = [
         client: "Graccioza, Portugal",
       },
       pt: {
-        title: "Graccioza",
+        title: "A Graccioza",
         subtitle: "Ilustração",
         description: [
-          "A Graccioza é uma marca portuguesa de luxo. Com mais de 50 anos de história, é reconhecida pelas suas toalhas premium, assim como pela presença em alguns dos mais prestigiados pontos de venda internacionais, como o Le Bon Marché e o Harrods. A nossa colaboração centrou-se no desenvolvimento de ilustração. Cada animal ganha forma a partir de salpicos de água, construído com cores fortes e movimentos orgânicos. Totalmente desenhadas à mão, as ilustrações captam uma sensação de frescura, traduzindo a vitalidade do oceano numa linguagem visual vibrante.",
+          "é uma marca portuguesa de luxo. Com mais de 50 anos de história, é reconhecida pelas suas toalhas premium, assim como pela presença em alguns dos mais prestigiados pontos de venda internacionais, como o Le Bon Marché e o Harrods. A nossa colaboração centrou-se no desenvolvimento de ilustração. Cada animal ganha forma a partir de salpicos de água, construído com cores fortes e movimentos orgânicos. Totalmente desenhadas à mão, as ilustrações captam uma sensação de frescura, traduzindo a vitalidade do oceano numa linguagem visual vibrante.",
         ],
         role: "Ilustração",
         client: "Graccioza, Portugal",
