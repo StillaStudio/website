@@ -4,7 +4,6 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 const nextConfig = {
   output: 'export',
-  basePath: '/website',
   typescript: {
     ignoreBuildErrors: true,
   },
