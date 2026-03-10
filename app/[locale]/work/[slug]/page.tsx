@@ -33,10 +33,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
 
       <main className="pt-17 bg-white">
         {/* Project Hero */}
-        <div className="px-6 mb-30 mt-20">
+        <div className="px-6 mb-12 md:mb-30 mt-12 md:mt-20">
           <div className="mx-auto text-center">
-            <h1 className="text-[80px] mb-4 serif">{project.title}</h1>
-            <p className="text-[24px] serif">{project.subtitle}</p>
+            <h1 className="text-4xl md:text-[80px] mb-3 md:mb-4 serif">{project.title}</h1>
+            <p className="text-lg md:text-[24px] serif">{project.subtitle}</p>
           </div>
         </div>
 
@@ -59,8 +59,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
 
 
         {/* Project Info */}
-        <div className="px-6 my-30">
-          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-24">
+        <div className="px-6 my-12 md:my-30">
+          <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-12 md:gap-24">
             <div>
               {project.description.map((paragraph, index) => (
                 <p key={index} className="text-xl mb-8 leading-relaxed">
@@ -126,14 +126,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
 
         {/* Quote */}
         {project.quoteText && (
-          <div className="container my-30 max-w-5xl mx-auto">
-            <div className="relative max-w-1/2 mb-[110px] text-left">
+          <div className="container my-12 md:my-30 max-w-5xl mx-auto px-6">
+            <div className="relative max-w-1/2 mb-12 md:mb-[110px] text-left">
               {project.quoteText && project.quoteText?.length > 0 && project.quoteText.map((paragraph, index) => (
                 <p key={index} className="text-xl mb-8 leading-relaxed">{paragraph}</p>
               ))}
             </div>
             {project.quote && (
-              <blockquote className="ml-auto max-w-[743px] text-[40px] font-light leading-relaxed serif text-right">
+              <blockquote className="ml-auto max-w-[743px] text-2xl md:text-[40px] font-light leading-relaxed serif text-right">
                 "{Array.isArray(project.quote) ? (
                   project.quote.map((line, index) => (
                     <span key={index}>

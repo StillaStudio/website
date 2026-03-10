@@ -16,14 +16,14 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <main className="pt-24 pb-20 bg-white">
 
         {/* About Section */}
-        <section className="py-32 px-6">
+        <section className="py-16 md:py-32 px-6">
           <div className="container mx-auto max-w-6xl">
-            <h2 className="text-5xl font-normal leading-tight serif mb-16">
+            <h2 className="text-3xl md:text-5xl font-normal leading-tight serif mb-8 md:mb-16">
               {t('headline')}
             </h2>
 
             <div className="flex justify-end">
-              <p className="text-2xl font-normal leading-relaxed max-w-2xl text-justify">
+              <p className="text-lg md:text-2xl font-normal leading-relaxed max-w-2xl text-justify">
                 {t('description1')}
               </p>
             </div>
@@ -31,7 +31,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </section>
 
         {/* Blue Section */}
-        <section className="w-full bg-[url(/website/images/home/hero-image.webp)] bg-center bg-cover bg-no-repeat h-[800px]">
+        <section className="w-full bg-[url(/images/home/hero-image.png)] bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]">
         </section>
 
         {/* The Practice Section */}
@@ -49,38 +49,38 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         />
 
         {/* Core Team & Services */}
-        <section className="py-32 px-6">
+        <section className="py-16 md:py-32 px-6">
           <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-24">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-24">
               <div>
-                <h3 className="text-[48px] mb-8 serif">{t('team.title')}</h3>
+                <h3 className="text-3xl md:text-[48px] mb-6 md:mb-8 serif">{t('team.title')}</h3>
                 <div className="space-y-2">
-                  <p className="text-[24px]">Andréa Simões</p>
-                  <p className="text-[24px]">Inês Oliveira</p>
+                  <p className="text-lg md:text-[24px]">Andréa Simões</p>
+                  <p className="text-lg md:text-[24px]">Inês Oliveira</p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-[48px] mb-8 serif">{t('services.title')}</h3>
-                <div className="grid grid-cols-2 gap-x-12 gap-y-2">
-                  <p className="text-[24px]">{t('services.artDirection')}</p>
-                  <p className="text-[24px]">{t('services.illustration')}</p>
-                  <p className="text-[24px]">{t('services.brandStrategy')}</p>
-                  <p className="text-[24px]">{t('services.naming')}</p>
-                  <p className="text-[24px]">{t('services.branding')}</p>
-                  <p className="text-[24px]">{t('services.packaging')}</p>
-                  <p className="text-[24px]">{t('services.copy')}</p>
-                  <p className="text-[24px]">{t('services.photography')}</p>
-                  <p className="text-[24px]">{t('services.corporatePresentations')}</p>
-                  <p className="text-[24px]">{t('services.creativeDirection')}</p>
-                  <p className="text-[24px]">{t('services.print')}</p>
-                  <p className="text-[24px]">{t('services.patternDesign')}</p>
-                  <p className="text-[24px]">{t('services.editorial')}</p>
-                  <p className="text-[24px]">{t('services.socialMediaDesign')}</p>
-                  <p className="text-[24px]">{t('services.film')}</p>
-                  <p className="text-[24px]">{t('services.visualIdentity')}</p>
-                  <p className="text-[24px]">{t('services.identitySystems')}</p>
-                  <p className="text-[24px]">{t('services.webDesign')}</p>
+                <h3 className="text-3xl md:text-[48px] mb-6 md:mb-8 serif">{t('services.title')}</h3>
+                <div className="grid grid-cols-2 gap-x-6 md:gap-x-12 gap-y-2">
+                  <p className="text-base md:text-[24px]">{t('services.artDirection')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.illustration')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.brandStrategy')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.naming')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.branding')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.packaging')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.copy')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.photography')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.corporatePresentations')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.creativeDirection')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.print')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.patternDesign')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.editorial')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.socialMediaDesign')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.film')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.visualIdentity')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.identitySystems')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.webDesign')}</p>
                 </div>
               </div>
             </div>
