@@ -136,10 +136,10 @@ export const projects: Project[] = [
         ]
       },
       pt: {
-        title: "Gamanatura",
+        title: "A Gamanatura",
         subtitle: "Branding Premium",
         description: [
-          "A Gamanatura é uma marca portuguesa de têxteis-lar com mais de 30 anos de história, enraizada no mercado ibérico. À medida que evolui para um posicionamento de luxo -  expandindo-se da roupa de cama para a moda - a marca começa a ser comercializada em mercados como Itália, Estados Unidos e Emirados Árabes Unidos.",
+          "é uma marca portuguesa de têxteis-lar com mais de 30 anos de história, enraizada no mercado ibérico. À medida que evolui para um posicionamento de luxo -  expandindo-se da roupa de cama para a moda - a marca começa a ser comercializada em mercados como Itália, Estados Unidos e Emirados Árabes Unidos.",
           "Trabalhámos com a Gamanatura na construção de uma nova direção criativa aplicada a todos os pontos de comunicação da marca, do design gráfico ao packaging, fotografia e web design.",
           "Este novo capítulo traduziu-se numa nova marca: agora com um tom de voz mais sofisticado, uma identidade visual contemporânea, e uma estrutura de storytelling clara que reforça a ligação emocional. Aplicado de forma consistente em todos os pontos de contacto, o nosso trabalho constrói uma presença distinta, posicionando a Gamanatura como uma marca de luxo moderna."
         ],
