@@ -42,7 +42,7 @@ export function ProjectsGrid({ projects, categoryKeys, translations }: ProjectsG
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-3 mt-8 md:mt-10">
         {filteredProjects.map((project) => (
           <Link key={project.id} href={`/work/${project.id}`} className="group">
-            <div className="relative overflow-hidden bg-secondary aspect-4/3 md:h-202.5 md:aspect-auto mb-8 md:mb-15">
+            <div className="relative overflow-hidden bg-secondary aspect-4/3 md:h-202.5 md:aspect-auto">
               <Image
                 src={getAssetPath(project.image || "/placeholder.svg")}
                 alt={project.title}

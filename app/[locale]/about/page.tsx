@@ -1,4 +1,5 @@
 import { Header } from "@/components/header"
+import { PracticeSection } from "@/components/practice-section"
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 
@@ -30,92 +31,56 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </section>
 
         {/* Blue Section */}
-        <section className="w-full bg-[url(/website/images/home/hero-image.png)] bg-center bg-cover bg-no-repeat h-[800px]">
+        <section className="w-full bg-[url(/website/images/home/hero-image.webp)] bg-center bg-cover bg-no-repeat h-[800px]">
         </section>
 
         {/* The Practice Section */}
-        <section className="bg-black text-white py-32 px-6">
-          <div className="container mx-auto max-w-5xl">
-            <h3 className="text-4xl md:text-5xl font-light text-center mb-24 serif">{t('practice.title')}</h3>
-
-            <div className="grid md:grid-cols-2 gap-x-20 gap-y-6">
-              <div>
-                <h4 className="text-lg font-light mb-3">{t('practice.step1.title')}</h4>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-light mb-3">{t('practice.step4.title')}</h4>
-                <p className="text-sm text-white/70 leading-relaxed">
-                  {t('practice.step4.description')}
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-light mb-3">{t('practice.step2.title')}</h4>
-                <p className="text-sm text-white/70 leading-relaxed">
-                  {t('practice.step2.description')}
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-light mb-3">{t('practice.step5.title')}</h4>
-                <p className="text-sm text-white/70 leading-relaxed">{t('practice.step5.description')}</p>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-light mb-3">{t('practice.step3.title')}</h4>
-                <p className="text-sm text-white/70 leading-relaxed">
-                  {t('practice.step3.description')}
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-lg font-light mb-3">{t('practice.step6.title')}</h4>
-                <p className="text-sm text-white/70 leading-relaxed">
-                  {t('practice.step6.description')}
-                </p>
-              </div>
-            </div>
-
-            <div className="text-center mt-32">
-              <p className="text-2xl font-light serif">{t('practice.end')}</p>
-            </div>
-          </div>
-        </section>
+        <PracticeSection
+          translations={{
+            title: t('practice.title'),
+            step1: { title: t('practice.step1.title') },
+            step2: { title: t('practice.step2.title'), description: t('practice.step2.description') },
+            step3: { title: t('practice.step3.title'), description: t('practice.step3.description') },
+            step4: { title: t('practice.step4.title'), description: t('practice.step4.description') },
+            step5: { title: t('practice.step5.title'), description: t('practice.step5.description') },
+            step6: { title: t('practice.step6.title'), description: t('practice.step6.description') },
+            end: t('practice.end'),
+          }}
+        />
 
         {/* Core Team & Services */}
         <section className="py-32 px-6">
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-2 gap-24">
               <div>
-                <h3 className="text-3xl font-light mb-8 serif">{t('team.title')}</h3>
+                <h3 className="text-[48px] mb-8 serif">{t('team.title')}</h3>
                 <div className="space-y-2">
-                  <p className="text-base">Andréa Simões</p>
-                  <p className="text-base">Inês Oliveira</p>
+                  <p className="text-[24px]">Andréa Simões</p>
+                  <p className="text-[24px]">Inês Oliveira</p>
                 </div>
               </div>
 
               <div>
-                <h3 className="text-3xl font-light mb-8 serif">{t('services.title')}</h3>
+                <h3 className="text-[48px] mb-8 serif">{t('services.title')}</h3>
                 <div className="grid grid-cols-2 gap-x-12 gap-y-2">
-                  <p className="text-base">{t('services.artDirection')}</p>
-                  <p className="text-base">{t('services.illustration')}</p>
-                  <p className="text-base">{t('services.brandStrategy')}</p>
-                  <p className="text-base">{t('services.naming')}</p>
-                  <p className="text-base">{t('services.branding')}</p>
-                  <p className="text-base">{t('services.packaging')}</p>
-                  <p className="text-base">{t('services.copy')}</p>
-                  <p className="text-base">{t('services.photography')}</p>
-                  <p className="text-base">{t('services.corporatePresentations')}</p>
-                  <p className="text-base">{t('services.print')}</p>
-                  <p className="text-base">{t('services.creativeDirection')}</p>
-                  <p className="text-base">{t('services.patternDesign')}</p>
-                  <p className="text-base">{t('services.editorial')}</p>
-                  <p className="text-base">{t('services.socialMediaDesign')}</p>
-                  <p className="text-base">{t('services.film')}</p>
-                  <p className="text-base">{t('services.visualIdentity')}</p>
-                  <p className="text-base">{t('services.identitySystems')}</p>
-                  <p className="text-base">{t('services.webDesign')}</p>
+                  <p className="text-[24px]">{t('services.artDirection')}</p>
+                  <p className="text-[24px]">{t('services.illustration')}</p>
+                  <p className="text-[24px]">{t('services.brandStrategy')}</p>
+                  <p className="text-[24px]">{t('services.naming')}</p>
+                  <p className="text-[24px]">{t('services.branding')}</p>
+                  <p className="text-[24px]">{t('services.packaging')}</p>
+                  <p className="text-[24px]">{t('services.copy')}</p>
+                  <p className="text-[24px]">{t('services.photography')}</p>
+                  <p className="text-[24px]">{t('services.corporatePresentations')}</p>
+                  <p className="text-[24px]">{t('services.print')}</p>
+                  <p className="text-[24px]">{t('services.creativeDirection')}</p>
+                  <p className="text-[24px]">{t('services.patternDesign')}</p>
+                  <p className="text-[24px]">{t('services.editorial')}</p>
+                  <p className="text-[24px]">{t('services.socialMediaDesign')}</p>
+                  <p className="text-[24px]">{t('services.film')}</p>
+                  <p className="text-[24px]">{t('services.visualIdentity')}</p>
+                  <p className="text-[24px]">{t('services.identitySystems')}</p>
+                  <p className="text-[24px]">{t('services.webDesign')}</p>
                 </div>
               </div>
             </div>

@@ -30,6 +30,7 @@ export interface Project {
   date: string
   categories: ProjectCategory[]
   media: MediaItem[]
+  quotePosition?: number // After which media item index to show the quote (default: 3)
   translations: {
     en: ProjectTranslation
     pt: ProjectTranslation
@@ -48,6 +49,7 @@ export interface LocalizedProject {
   date: string
   categories: ProjectCategory[]
   media: MediaItem[]
+  quotePosition?: number
   quote?: string
   quoteText?: string[]
 }
@@ -105,16 +107,17 @@ export const projects: Project[] = [
     date: "2025",
     categories: ['creativeDirection', 'visualIdentity', 'printEditorial', 'illustrationPatterns'],
     media: [
-      { type: 'image', src: "/images/projects/gamanatura/1.png" },
-      { type: 'image', src: "/images/projects/gamanatura/2.png" },
-      { type: 'image', src: "/images/projects/gamanatura/3.png" },
-      { type: 'image', src: "/images/projects/gamanatura/4.png" },
-      { type: 'image', src: "/images/projects/gamanatura/5.png" },
-      { type: 'image', src: "/images/projects/gamanatura/6.png" },
+      { type: 'image', src: "/images/projects/gamanatura/1.webp" },
+      { type: 'image', src: "/images/projects/gamanatura/2.webp" },
+      { type: 'image', src: "/images/projects/gamanatura/3.webp" },
+      { type: 'image', src: "/images/projects/gamanatura/4.webp" },
+      { type: 'image', src: "/images/projects/gamanatura/5.webp" },
+      { type: 'image', src: "/images/projects/gamanatura/6.webp" },
       { type: 'video', src: "/videos/projects/gamanatura/7.mp4" },
       { type: 'video', src: "/videos/projects/gamanatura/8.mp4" },
       { type: 'video', src: "/videos/projects/gamanatura/9.mp4" },
     ],
+    quotePosition: 4,
     translations: {
       en: {
         title: "Gamanatura",
@@ -156,13 +159,13 @@ export const projects: Project[] = [
     date: "2023",
     categories: ['webDesign'],
     media: [
-      { type: 'image', src: "/images/projects/palestine/1.png" },
-      { type: 'image', src: "/images/projects/palestine/2.png" },
+      { type: 'image', src: "/images/projects/palestine/1.webp" },
+      { type: 'image', src: "/images/projects/palestine/2.webp" },
       { type: 'video', src: "/videos/projects/palestine/3.mp4" },
-      { type: 'image', src: "/images/projects/palestine/4.png" },
-      { type: 'image', src: "/images/projects/palestine/5.png" },
-      { type: 'image', src: "/images/projects/palestine/6.png" },
-      { type: 'image', src: "/images/projects/palestine/7.png" },
+      { type: 'image', src: "/images/projects/palestine/4.webp" },
+      { type: 'image', src: "/images/projects/palestine/5.webp" },
+      { type: 'image', src: "/images/projects/palestine/6.webp" },
+      { type: 'image', src: "/images/projects/palestine/7.webp" },
     ],
     translations: {
       en: {
@@ -196,11 +199,11 @@ export const projects: Project[] = [
     categories: ['illustrationPatterns'],
     media: [
       { type: 'video', src: "/videos/projects/zara/1.mp4" },
-      { type: 'image', src: "/images/projects/zara/2.png" },
+      { type: 'image', src: "/images/projects/zara/2.webp" },
       { type: 'video', src: "/videos/projects/zara/3.mp4" },
       { type: 'video', src: "/videos/projects/zara/4.mp4" },
       { type: 'video', src: "/videos/projects/zara/5.mp4" },
-      { type: 'image', src: "/images/projects/zara/6.png" },
+      { type: 'image', src: "/images/projects/zara/6.webp" },
     ],
     translations: {
       en: {
@@ -229,14 +232,16 @@ export const projects: Project[] = [
     date: "2024",
     categories: ['creativeDirection', 'visualIdentity', 'printEditorial', 'socialMedia'],
     media: [
-      { type: 'image', src: "/images/projects/adalberto/1.png" },
+      { type: 'image', src: "/images/projects/adalberto/1.webp" },
       { type: 'video', src: "/videos/projects/adalberto/2.mp4" },
       { type: 'video', src: "/videos/projects/adalberto/3.mp4" },
+      { type: 'image', src: "/images/projects/adalberto/4.webp" },
       { type: 'video', src: "/videos/projects/adalberto/4.mp4" },
-      { type: 'image', src: "/images/projects/adalberto/5.png" },
-      { type: 'image', src: "/images/projects/adalberto/6.png" },
+      { type: 'image', src: "/images/projects/adalberto/5.webp" },
+      { type: 'image', src: "/images/projects/adalberto/6.webp" },
       { type: 'video', src: "/videos/projects/adalberto/7.mp4" },
     ],
+    quotePosition: 7, // Show 6 media items (indices 1-6) before quote, then remaining
     translations: {
       en: {
         title: "Adalberto Textile Solutions",
@@ -271,11 +276,10 @@ export const projects: Project[] = [
     categories: ['illustrationPatterns'],
     media: [
       { type: 'video', src: "/videos/projects/bouchara/1.mp4" },
-      { type: 'video', src: "/videos/projects/bouchara/2.mp4" },
       { type: 'video', src: "/videos/projects/bouchara/3.mp4" },
       { type: 'video', src: "/videos/projects/bouchara/4.mp4" },
-      { type: 'image', src: "/images/projects/bouchara/5.png" },
-      { type: 'image', src: "/images/projects/bouchara/6.png" },
+      { type: 'image', src: "/images/projects/bouchara/5.webp" },
+      { type: 'image', src: "/images/projects/bouchara/6.webp" },
       { type: 'video', src: "/videos/projects/bouchara/7.mp4" },
       { type: 'image', src: "/images/projects/bouchara/8.png" },
     ],
@@ -306,12 +310,12 @@ export const projects: Project[] = [
     date: "2023",
     categories: ['printEditorial'],
     media: [
-      { type: 'image', src: "/images/projects/spago/1.png" },
+      { type: 'image', src: "/images/projects/spago/1.jpg" },
       { type: 'video', src: "/videos/projects/spago/2.mp4" },
-      { type: 'image', src: "/images/projects/spago/3.png" },
+      { type: 'image', src: "/images/projects/spago/3.webp" },
       { type: 'video', src: "/videos/projects/spago/4.mp4" },
-      { type: 'image', src: "/images/projects/spago/5.png" },
-      { type: 'image', src: "/images/projects/spago/6.png" },
+      { type: 'image', src: "/images/projects/spago/5.webp" },
+      { type: 'image', src: "/images/projects/spago/6.webp" },
     ],
     translations: {
       en: {
@@ -344,12 +348,12 @@ export const projects: Project[] = [
     categories: ['visualIdentity', 'socialMedia'],
     media: [
       { type: 'video', src: "/videos/projects/elevique/1.mp4" },
-      { type: 'image', src: "/images/projects/elevique/2.png" },
-      { type: 'image', src: "/images/projects/elevique/3.png" },
-      { type: 'image', src: "/images/projects/elevique/4.png" },
+      { type: 'image', src: "/images/projects/elevique/2.webp" },
+      { type: 'image', src: "/images/projects/elevique/3.webp" },
+      { type: 'image', src: "/images/projects/elevique/4.webp" },
       { type: 'video', src: "/videos/projects/elevique/5.mp4" },
-      { type: 'image', src: "/images/projects/elevique/6.png" },
-      { type: 'image', src: "/images/projects/elevique/7.png" },
+      { type: 'image', src: "/images/projects/elevique/6.webp" },
+      { type: 'image', src: "/images/projects/elevique/7.webp" },
     ],
     translations: {
       en: {
@@ -381,12 +385,12 @@ export const projects: Project[] = [
     categories: ['illustrationPatterns'],
     media: [
       { type: 'video', src: "/videos/projects/fine/1.mp4" },
-      { type: 'image', src: "/images/projects/fine/2.png" },
+      { type: 'image', src: "/images/projects/fine/2.webp" },
       { type: 'video', src: "/videos/projects/fine/3.mp4" },
       { type: 'video', src: "/videos/projects/fine/4.mp4" },
       { type: 'video', src: "/videos/projects/fine/5.mp4" },
       { type: 'video', src: "/videos/projects/fine/6.mp4" },
-      { type: 'image', src: "/images/projects/fine/7.png" },
+      { type: 'image', src: "/images/projects/fine/7.webp" },
     ],
     translations: {
       en: {
@@ -419,13 +423,13 @@ export const projects: Project[] = [
     date: "2022",
     categories: ['printEditorial'],
     media: [
-      { type: 'image', src: "/images/projects/california/1.png" },
+      { type: 'image', src: "/images/projects/california/1.webp" },
       { type: 'video', src: "/videos/projects/california/2.mp4" },
-      { type: 'image', src: "/images/projects/california/3.png" },
-      { type: 'image', src: "/images/projects/california/4.png" },
-      { type: 'image', src: "/images/projects/california/5.png" },
-      { type: 'image', src: "/images/projects/california/6.png" },
-      { type: 'image', src: "/images/projects/california/7.png" },
+      { type: 'image', src: "/images/projects/california/3.webp" },
+      { type: 'image', src: "/images/projects/california/4.webp" },
+      { type: 'image', src: "/images/projects/california/5.webp" },
+      { type: 'image', src: "/images/projects/california/6.webp" },
+      { type: 'image', src: "/images/projects/california/7.webp" },
     ],
     translations: {
       en: {
@@ -459,12 +463,12 @@ export const projects: Project[] = [
     categories: ['visualIdentity', 'socialMedia'],
     media: [
       { type: 'video', src: "/videos/projects/psysiolim/1.mp4" },
-      { type: 'image', src: "/images/projects/psysiolim/2.png" },
-      { type: 'image', src: "/images/projects/psysiolim/3.png" },
-      { type: 'image', src: "/images/projects/psysiolim/4.png" },
+      { type: 'image', src: "/images/projects/psysiolim/2.webp" },
+      { type: 'image', src: "/images/projects/psysiolim/3.webp" },
+      { type: 'image', src: "/images/projects/psysiolim/4.webp" },
       { type: 'video', src: "/videos/projects/psysiolim/5.mp4" },
-      { type: 'image', src: "/images/projects/psysiolim/6.png" },
-      { type: 'image', src: "/images/projects/psysiolim/7.png" },
+      { type: 'image', src: "/images/projects/psysiolim/6.webp" },
+      { type: 'image', src: "/images/projects/psysiolim/7.webp" },
     ],
     translations: {
       en: {
@@ -495,13 +499,13 @@ export const projects: Project[] = [
     date: "2022",
     categories: ['webDesign'],
     media: [
+      { type: 'image', src: "/images/projects/gaspar/1.webp" },
+      { type: 'image', src: "/images/projects/gaspar/2.webp" },
+      { type: 'image', src: "/images/projects/gaspar/3.webp" },
+      { type: 'image', src: "/images/projects/gaspar/4.webp" },
       { type: 'video', src: "/videos/projects/gaspar/1.mp4" },
-      { type: 'image', src: "/images/projects/gaspar/2.png" },
-      { type: 'image', src: "/images/projects/gaspar/3.png" },
-      { type: 'image', src: "/images/projects/gaspar/4.png" },
-      { type: 'image', src: "/images/projects/gaspar/5.png" },
-      { type: 'image', src: "/images/projects/gaspar/6.png" },
-      { type: 'image', src: "/images/projects/gaspar/7.png" },
+      { type: 'image', src: "/images/projects/gaspar/6.webp" },
+      { type: 'image', src: "/images/projects/gaspar/7.webp" },
     ],
     translations: {
       en: {
@@ -534,9 +538,9 @@ export const projects: Project[] = [
     date: "2023 - 2024",
     categories: ['illustrationPatterns'],
     media: [
-      { type: 'image', src: "/images/projects/gracciza/1.png" },
-      { type: 'image', src: "/images/projects/gracciza/2.png" },
-      { type: 'image', src: "/images/projects/gracciza/3.png" },
+      { type: 'image', src: "/images/projects/gracciza/1.webp" },
+      { type: 'image', src: "/images/projects/gracciza/2.webp" },
+      { type: 'image', src: "/images/projects/gracciza/3.webp" },
       { type: 'video', src: "/videos/projects/gracciza/4.mp4" },
       { type: 'video', src: "/videos/projects/gracciza/5.mp4" },
     ],
@@ -574,6 +578,7 @@ export function getProjectById(id: string, locale: 'en' | 'pt' = 'en'): Localize
     date: project.date,
     categories: project.categories,
     media: project.media,
+    quotePosition: project.quotePosition,
     title: translation.title,
     subtitle: translation.subtitle,
     description: translation.description,
@@ -594,6 +599,7 @@ export function getAllProjects(locale: 'en' | 'pt' = 'en'): LocalizedProject[] {
       date: project.date,
       categories: project.categories,
       media: project.media,
+      quotePosition: project.quotePosition,
       title: translation.title,
       subtitle: translation.subtitle,
       description: translation.description,
