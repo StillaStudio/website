@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { PracticeSection } from "@/components/practice-section"
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
+import Image from 'next/image'
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -31,10 +32,14 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </section>
 
         {/* Blue Section */}
-        <section
-          className="w-full bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]"
-          style={{ backgroundImage: 'url(/images/home/ABOUT.webp)' }}
-        >
+        <section className="w-full h-[400px] md:h-[800px] relative">
+          <Image
+            src="/images/home/ABOUT.webp"
+            alt="About Still a Studio"
+            fill
+            className="object-cover"
+            priority
+          />
         </section>
 
         {/* The Practice Section */}
