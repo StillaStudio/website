@@ -24,13 +24,13 @@ export function ProjectsGrid({ projects, categoryKeys, translations }: ProjectsG
   return (
     <>
       {/* Filter Categories */}
-      <div className="flex flex-wrap gap-x-4 gap-y-2 md:gap-6 text-xs md:text-sm">
+      <div className="flex flex-wrap gap-x-4 gap-y-2 md:gap-6 text-base md:text-lg">
         {categoryKeys.map((categoryKey) => (
           <button
             key={categoryKey}
             onClick={() => setActiveCategory(categoryKey)}
             className={`hover:opacity-70 transition-opacity hover:cursor-pointer ${
-              activeCategory === categoryKey ? 'font-bold' : ''
+              activeCategory === categoryKey ? 'font-medium' : ''
             }`}
           >
             {translations[categoryKey]}

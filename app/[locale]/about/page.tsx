@@ -10,10 +10,10 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   const tContact = await getTranslations('contact')
 
   return (
-    <div className="min-h-screen bg-[#FDFCF5]">
+    <div className="min-h-screen bg-white">
       <Header dark />
 
-      <main className="pt-24 pb-20 bg-[#FDFCF5]">
+      <main className="pt-24 pb-20 bg-white">
 
         {/* About Section */}
         <section className="py-32 px-6">
@@ -87,7 +87,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </div>
         </section>
       </main>
-      <footer className="py-8 px-6 bg-[#FDFCF5]">
+      <footer className="py-8 px-6 bg-white">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
           <div>
             <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">

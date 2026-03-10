@@ -28,10 +28,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
   }
 
   return (
-    <div className="min-h-screen bg-[#FDFCF5]">
+    <div className="min-h-screen bg-white">
       <Header dark />
 
-      <main className="pt-17 bg-[#FDFCF5]">
+      <main className="pt-17 bg-white">
         {/* Project Hero */}
         <div className="px-6 mb-30 mt-20">
           <div className="mx-auto text-center">
@@ -129,12 +129,21 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
           <div className="container my-30 max-w-5xl mx-auto">
             <div className="relative max-w-1/2 mb-[110px] text-left">
               {project.quoteText && project.quoteText?.length > 0 && project.quoteText.map((paragraph, index) => (
-                <p key={index} className="text-[24px] mb-[24px]">{paragraph}</p>
+                <p key={index} className="text-xl mb-8 leading-relaxed">{paragraph}</p>
               ))}
             </div>
             {project.quote && (
               <blockquote className="ml-auto max-w-[743px] text-[40px] font-light leading-relaxed serif text-right">
-                "{project.quote}"
+                "{Array.isArray(project.quote) ? (
+                  project.quote.map((line, index) => (
+                    <span key={index}>
+                      {line}
+                      {index < (project.quote as string[]).length - 1 && <br />}
+                    </span>
+                  ))
+                ) : (
+                  project.quote
+                )}"
               </blockquote>
             )}
           </div>
@@ -166,7 +175,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
           </div>
         ))}
       </main>
-      <footer className="py-8 px-6 bg-[#FDFCF5]">
+      <footer className="py-8 px-6 bg-white">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-base">
             <div>
               <a href="mailto:hello@still-a-studio.com" className="hover:opacity-70 transition-opacity">

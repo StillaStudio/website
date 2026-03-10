@@ -5,7 +5,7 @@ export interface ProjectTranslation {
   role: string
   client: string
   award?: string
-  quote?: string
+  quote?: string | string[]
   quoteText?: string[]
 }
 
@@ -50,7 +50,7 @@ export interface LocalizedProject {
   categories: ProjectCategory[]
   media: MediaItem[]
   quotePosition?: number
-  quote?: string
+  quote?: string | string[]
   quoteText?: string[]
 }
 
@@ -85,9 +85,9 @@ export const projects: Project[] = [
       },
       pt: {
         title: "The New Eden",
-        subtitle: "Narrativas em Movimento",
+        subtitle: "Narrativa Cinematográfica",
         description: [
-          "The New Eden é uma coleção conceptual desenvolvida para uma empresa têxtil portuguesa na linha da frente da sustentabilidade europeia. Cada elemento, da fibra ao acabamento da matéria-prima é 100% rasteável, de origem certificada e concebido para honrar o planeta.",
+          "The New Eden é uma coleção conceptual, desenvolvida por uma empresa têxtil portuguesa na linha da frente da sustentabilidade europeia. Cada elemento, da fibra ao acabamento da matéria-prima é 100% rasteável, de origem certificada e concebido para honrar o planeta.",
           "O nosso trabalho assentou na construção narrativa do projecto através de direção criativa, realização e produção de um filme - premiado pelo Fashion Film Festival - assim como o desenho de elementos gráficos que permitiram ao cliente comunicar este manifesto.",
           "Nascida do diálogo entre os reinos vegetal e mineral, a coleção celebra o uso de fibras naturais - algodão, cânhamo e linho - e processos inovadores de tingimento com pigmentos minerais."
         ],
@@ -97,7 +97,7 @@ export const projects: Project[] = [
         quoteText: [
           "Mais do que uma tendência, The New Eden afirma-se como um manifesto: um apelo a um regresso consciente e intencional aos recursos naturais. Se o Jardim do Éden pertence ao imaginário, o planeta que habitamos continua a ser o nosso verdadeiro jardim - o único que temos e aquele que importa preservar. É um convite para voltar a escutar o ritmo da terra e a reconhecer que a verdadeira inovação nasce quando desaceleramos e aprendemos a ouvir."
         ],
-        quote: "The New Eden. Nome vulgar? Planeta Terra. Preserva-o.",
+        quote: "The New Eden. Nome vulgar? Planeta\u00A0Terra. Preserva-o.",
       }
     }
   },
@@ -183,12 +183,12 @@ export const projects: Project[] = [
         title: "Palestine Poster Archive",
         subtitle: "Arquivo Digital",
         description: [
-          "Palestine Poster Archive é um projeto de web design que assenta na reformulação de um arquivo digital dedicado à recolha e preservação de cartazes palestinianos. Num contexto em que o povo palestiniano vê a sua continuidade ameaçada, a preservação desta herança gráfica assume-se como algo que vai muito além do registo histórico - é, também, um ato político e cultural.",
+          "Palestine Poster Archive é um projecto de web design que assenta na reformulação de um arquivo digital dedicado à recolha e preservação de cartazes palestinianos. Num contexto em que o povo palestiniano vê a sua continuidade ameaçada, a preservação desta herança gráfica assume-se como algo que vai muito além do registo histórico - é, também, um ato político e cultural.",
           "O trabalho desenvolveu-se a partir da reorganização da estrutura visual e da experiência do utilizador do website, procurando dar clareza, dignidade e visibilidade a um acervo visual de grande força simbólica. O novo desenho reforça o arquivo enquanto espaço vivo de memória, resistência e identidade, assegurando que estas expressões gráficas permanecem acessíveis e presentes.",
           "Todos os cartazes e materiais visuais apresentados no arquivo são reproduzidos exclusivamente para fins arquivísticos e educativos, permanecendo propriedade intelectual dos seus autores, designers ou instituições associadas."
         ],
         role: "Web Design",
-        client: "Projeto pessoal",
+        client: "Projecto pessoal",
       }
     }
   },
@@ -210,16 +210,16 @@ export const projects: Project[] = [
         title: "Zara Home Series",
         subtitle: "Pattern Design",
         description: [
-          "Zara Home is a global home décor and textiles label, part of the Spanish Inditex group. It is known for its contemporary collections and presence in markets worldwide, with hundreds of stores and online reach across more than 60 countries. Since 2018, in line with its creative direction, we have been developing a series of patterns for their products. In addition to contemporary motifs, our work also explores more traditional patterns, such as paisleys and floral designs.",
+          "Zara Home is a global home décor and textiles label, part of the Spanish Inditex group. It is known for its contemporary collections and presence in markets worldwide, with hundreds of stores and online reach across more than 60 countries. Since 2018, in line with its creative direction, we have been developing a series of patterns for their products.",
         ],
         role: "Illustration and Pattern Design",
         client: "Inditex, Spain",
       },
       pt: {
-        title: "Zara Home Series",
+        title: "Zara Home",
         subtitle: "Design de Padrões",
         description: [
-          "A Zara Home é uma marca de têxteis-lar e decoração que faz parte do grupo espanhol Inditex. Reconhecida pelas suas coleções contemporâneas e pela forte presença internacional, tem centenas de lojas físicas e uma plataforma online ativa em mais de 60 países. Desde 2018, e em colaboração com a direção criativa da marca, temos vindo a desenvolver uma série de padrões para os seus produtos. O nosso trabalho centra-se essencialmente na reinterpretação de padrões tradicionais, como paisleys e motivos florais.",
+          " é uma marca de têxteis-lar e decoração que faz parte do grupo espanhol Inditex. Reconhecida pelas suas coleções contemporâneas e pela forte presença internacional, têm centenas de lojas físicas e uma plataforma online ativa em mais de 60 países. Desde 2018, e em colaboração com a direção criativa da marca, temos vindo a desenvolver uma série de padrões para os seus produtos.",
         ],
         role: "Design de Padrões e Ilustração",
         client: "Inditex, Espanha",
@@ -257,7 +257,7 @@ export const projects: Project[] = [
       },
       pt: {
         title: "Adalberto Textile Solutions",
-        subtitle: "Têxteis do Amanhã",
+        subtitle: "Têxteis do Futuro",
         description: [
           "A Adalberto Textile Solutions (est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
           "O rebranding foi pensado para comunicar o salto evolutivo: preservar a herança do logótipo original, já reconhecido no mercado, mas redefinindo tudo o que o rodeia - uma direção criativa contemporânea e orientada para a visão tecnológica, uma linguagem fotográfica e ilustrações alinhadas com o novo storytelling, assim como um novo sistema tipográfico, agora mais refinado.",
@@ -272,7 +272,7 @@ export const projects: Project[] = [
   {
     id: "bouchara",
     image: "/images/projects/bouchara/bouchara-series.png",
-    date: "2023",
+    date: "2018 - 2025",
     categories: ['illustrationPatterns'],
     media: [
       { type: 'video', src: "/videos/projects/bouchara/1.mp4" },
@@ -291,7 +291,7 @@ export const projects: Project[] = [
           "Bouchara is a historic French home textiles and décor company, founded in 1899, with a long-standing presence in the French market. Since 2018, we have been developing a series of patterns for their products, created in line with its creative direction. The designs are handpainted, driven by movement and layered connections, resulting in dynamic compositions that seem to come to life.",
         ],
         role: "Illustration and Pattern Design",
-        client: "Doucheira",
+        client: "Bouchara",
       },
       pt: {
         title: "Bouchara Series",
@@ -300,7 +300,7 @@ export const projects: Project[] = [
           "A Bouchara é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
         ],
         role: "Design de Padrões e Ilustração",
-        client: "Doucheira",
+        client: "Bouchara",
       }
     }
   },
@@ -333,11 +333,11 @@ export const projects: Project[] = [
         title: "Spago Mangiabile",
         subtitle: "Narrativa Gráfica",
         description: [
-          "Spago Mangiabile é um projeto pessoal que surge da exploração gráfica. Concretizado sob a forma de um livro editorial, o trabalho parte dos cadernos de engenhos e receitas de Leonardo da Vinci para propor uma leitura contemporânea do seu universo.",
-          "Inspirado pela sua abordagem interdisciplinar - onde arte, ciência e engenharia se cruzam - o projeto recupera o carácter lúdico e irónico presente no Codex Romanoff, refletindo sobre o cozinhar, o estar à mesa e os comportamentos sociais no período renascentista. Através de figuras emblemáticas do círculo de Leonardo e da alimentação enquanto elemento de distinção social e poder, Spago Mangiabile constrói uma narrativa visual que cruza história, cultura e exploração gráfica.",
+          "Spago Mangiabile é um projecto pessoal que surge da exploração gráfica. Concretizado sob a forma de um livro editorial, o trabalho parte dos cadernos de engenhos e receitas de Leonardo da Vinci para propor uma leitura contemporânea do seu universo.",
+          "Inspirado pela sua abordagem interdisciplinar - onde arte, ciência e engenharia se cruzam - o projecto recupera o carácter lúdico e irónico presente no Codex Romanoff, refletindo sobre o cozinhar, o estar à mesa e os comportamentos sociais no período renascentista. Através de figuras emblemáticas do círculo de Leonardo e da alimentação enquanto elemento de distinção social e poder, Spago Mangiabile constrói uma narrativa visual que cruza história, cultura e exploração gráfica.",
         ],
         role: "Design Gráfico, Desenvolvimento de Conceito e Ilustração",
-        client: "Projeto Pessoal",
+        client: "Projecto Pessoal",
       }
     }
   },
@@ -390,7 +390,6 @@ export const projects: Project[] = [
       { type: 'video', src: "/videos/projects/fine/4.mp4" },
       { type: 'video', src: "/videos/projects/fine/5.mp4" },
       { type: 'video', src: "/videos/projects/fine/6.mp4" },
-      { type: 'image', src: "/images/projects/fine/7.webp" },
     ],
     translations: {
       en: {
@@ -406,14 +405,14 @@ export const projects: Project[] = [
       },
       pt: {
         title: "Fine Detail Series",
-        subtitle: "Design de Padrões",
+        subtitle: "Design de Padrões e Ilustração",
         description: [
           "A Fine Detail Series é uma coleção de padrões pintados à mão, desenvolvida para a Gamanatura, nascida de um profundo espanto pela beleza da natureza que nos rodeia. Enquanto humanos, encontramos paz nas formas orgânicas, e é nessa procura - pela tranquilidade, pelo equilíbrio e pelo reconhecimento da beleza natural - que estes padrões ganham forma.",
         ],
         role: "Design Gráfico e Desenvolvimento de Conceito",
         client: "Gamanatura, Portugal",
         quoteText: ["Cada desenho resulta de um processo lento e consciente, moldado pela paciência, pela atenção e por anos de experiência no desenvolvimento de padrões para o universo da moda. Enraizada na contemplação, a série traduz a complexidade subtil da natureza em composições, onde o tempo, o gesto manual e a observação estão tão presentes quanto a imagem final."],
-        quote: "Celebrar a natureza, lutar pela beleza no quotidiano."
+        quote: ["Celebrar a natureza,", "lutar pela beleza no quotidiano."]
       }
     }
   },
@@ -450,9 +449,9 @@ export const projects: Project[] = [
           "Hotel California é um trabalho pessoal de construção de uma narrativa visual através de uma música, procurando explorar a relação entre o conteúdo de uma mensagem e a forma visual que o expressa. “Hotel California” serve de base conceptual para uma exploração gráfica do excesso. O hedonismo, a auto-indulgência e o lado oculto do sonho americano orientam a seleção de imagens, tipografia, cor e ritmo visual, organizados numa sequência inspirada pelo contraste entre promessa e desilusão.",
         ],
         role: "Design Gráfico e Desenvolvimento de Conceito",
-        client: "Projeto Pessoal",
+        client: "Projecto Pessoal",
         quoteText: ["A narrativa visual resultante procura amplificar a ambiguidade presente na canção, permitindo que cada leitor construa a sua própria fição interna - um percurso onde é possível fazer check-out, mas nunca abandonar totalmente o eco do excesso."],
-        quote: "It’s basically a song about the dark underbelly of the American dream and about excess in America, which is something we knew a lot about."
+        quote: "It's basically a song about the dark underbelly of the American dream."
       }
     }
   },
@@ -525,10 +524,10 @@ export const projects: Project[] = [
         description: [
           "Gaspar Noé Film Cycle é um website criado para a divulgação de Crossing the Border, um ciclo de cinema dedicado à obra do cineasta franco-argentino Gaspar Noé. O conceito visual parte do impacto de Enter the Void, usando a imagem dos neurónios como metáfora para a intensidade e o carácter fora da norma que definem o seu cinema.",
           "O desenho do website assume o exagero e a provocação como forma de homenagem à linguagem visual de Noé, transportando essa atitude radical para o universo digital. A frase do próprio realizador - “I am actually a real film junkie, it’s my main drug.” - surge como elemento central, reforçando a natureza visceral e obsessiva da sua relação com o cinema",
-          "Todas as imagens e materiais audiovisuais apresentados no website permanecem propriedade intelectual dos respetivos titulares de direitos e são utilizados exclusivamente no contexto do projeto do website."
+          "Todas as imagens e materiais audiovisuais apresentados no website permanecem propriedade intelectual dos respetivos titulares de direitos e são utilizados exclusivamente no contexto do projecto do website."
         ],
         role: "Web Design",
-        client: "Projeto Pessoal",
+        client: "Projecto Pessoal",
       }
     }
   },
@@ -556,7 +555,7 @@ export const projects: Project[] = [
       },
       pt: {
         title: "Graccioza",
-        subtitle: "Ilustração Pintada à Mão",
+        subtitle: "Ilustração",
         description: [
           "A Graccioza é uma marca portuguesa de luxo. Com mais de 50 anos de história, é reconhecida pelas suas toalhas premium, assim como pela presença em alguns dos mais prestigiados pontos de venda internacionais, como o Le Bon Marché e o Harrods. A nossa colaboração centrou-se no desenvolvimento de ilustração. Cada animal ganha forma a partir de salpicos de água, construído com cores fortes e movimentos orgânicos. Totalmente desenhadas à mão, as ilustrações captam uma sensação de frescura, traduzindo a vitalidade do oceano numa linguagem visual vibrante.",
         ],
