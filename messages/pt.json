@@ -15,26 +15,26 @@
     "practice": {
       "title": "A Prática",
       "step1": {
-        "title": "Parar."
+        "title": "1. Parar."
       },
       "step2": {
-        "title": "Observar",
+        "title": "2. Observar",
         "description": "Estar atentos, perseguir a curiosidade."
       },
       "step3": {
-        "title": "Colecionar sementes",
+        "title": "3. Colecionar sementes",
         "description": "Recolher inspiração, encontrar pequenos tesouros."
       },
       "step4": {
-        "title": "Definir um caminho (e depois reinventá-lo)",
+        "title": "4. Definir um caminho",
         "description": "Estruturar, mas sem perder espaço para explorar."
       },
       "step5": {
-        "title": "Construir com foco",
+        "title": "5. Construir com foco",
         "description": "Trabalhar as ideias até que se tornem concretas."
       },
       "step6": {
-        "title": "Respirar",
+        "title": "6. Respirar",
         "description": "Dar um passo atrás, observar, deixar a obra falar."
       },
       "end": "Fim"
@@ -52,12 +52,12 @@
       "packaging": "Packaging",
       "copy": "Copy",
       "photography": "Fotografia",
-      "corporatePresentations": "Apresentações Corporativas",
+      "corporatePresentations": "Apresentações\u00A0Corporativas",
       "print": "Print",
       "creativeDirection": "Direção Criativa",
       "patternDesign": "Design de Padrões",
       "editorial": "Editorial",
-      "socialMediaDesign": "Design para Redes Sociais",
+      "socialMediaDesign": "Design\u00A0para\u00A0Redes\u00A0Sociais",
       "film": "Filme",
       "visualIdentity": "Identidade Visual",
       "identitySystems": "Sistemas de Identidade",

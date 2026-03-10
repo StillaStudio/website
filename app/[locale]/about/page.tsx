@@ -19,12 +19,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <section className="py-32 px-6">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-5xl font-normal leading-tight serif mb-16">
-              Still a Studio. A multidisciplinary creative studio designing visuals that invite audiences to pause - a continuous act of stillness amid the noise.
+              {t('headline')}
             </h2>
 
             <div className="flex justify-end">
               <p className="text-2xl font-normal leading-relaxed max-w-2xl text-justify">
-                We are graphic designers and storytellers in an endless conversation with illustration, photography and film.
+                {t('description1')}
               </p>
             </div>
           </div>
@@ -72,8 +72,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                   <p className="text-[24px]">{t('services.copy')}</p>
                   <p className="text-[24px]">{t('services.photography')}</p>
                   <p className="text-[24px]">{t('services.corporatePresentations')}</p>
-                  <p className="text-[24px]">{t('services.print')}</p>
                   <p className="text-[24px]">{t('services.creativeDirection')}</p>
+                  <p className="text-[24px]">{t('services.print')}</p>
                   <p className="text-[24px]">{t('services.patternDesign')}</p>
                   <p className="text-[24px]">{t('services.editorial')}</p>
                   <p className="text-[24px]">{t('services.socialMediaDesign')}</p>
