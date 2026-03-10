@@ -62,24 +62,24 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
               <div>
                 <h3 className="text-3xl md:text-[48px] mb-6 md:mb-8 serif">{t('services.title')}</h3>
-                <div className="grid grid-cols-2 gap-x-6 md:gap-x-12 gap-y-2">
+                <div className="grid grid-cols-2 gap-x-6 md:gap-x-12 gap-y-3">
                   <p className="text-base md:text-[24px]">{t('services.artDirection')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.illustration')}</p>
                   <p className="text-base md:text-[24px]">{t('services.brandStrategy')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.naming')}</p>
                   <p className="text-base md:text-[24px]">{t('services.branding')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.packaging')}</p>
                   <p className="text-base md:text-[24px]">{t('services.copy')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.photography')}</p>
                   <p className="text-base md:text-[24px]">{t('services.corporatePresentations')}</p>
                   <p className="text-base md:text-[24px]">{t('services.creativeDirection')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.print')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.patternDesign')}</p>
                   <p className="text-base md:text-[24px]">{t('services.editorial')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.socialMediaDesign')}</p>
                   <p className="text-base md:text-[24px]">{t('services.film')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.visualIdentity')}</p>
                   <p className="text-base md:text-[24px]">{t('services.identitySystems')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.illustration')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.naming')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.packaging')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.patternDesign')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.photography')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.print')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.socialMediaDesign')}</p>
+                  <p className="text-base md:text-[24px]">{t('services.visualIdentity')}</p>
                   <p className="text-base md:text-[24px]">{t('services.webDesign')}</p>
                 </div>
               </div>

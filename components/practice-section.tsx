@@ -36,9 +36,9 @@ export function PracticeSection({ translations }: PracticeSectionProps) {
           {translations.title}
         </h3>
 
-        <div className="grid md:grid-cols-2 gap-x-8 md:gap-x-16 md:gap-x-24 gap-y-6 md:gap-y-8 md:gap-y-12">
+        <div className="grid md:grid-cols-2 gap-x-8 md:gap-x-24 gap-y-6 md:gap-y-12">
           {/* Left Column: Steps 1-3 */}
-          <div className="space-y-6 md:space-y-8 md:space-y-12">
+          <div className="space-y-6 md:space-y-12">
             <div
               onMouseEnter={() => setHoveredStep(1)}
               onMouseLeave={() => setHoveredStep(null)}
@@ -71,7 +71,7 @@ export function PracticeSection({ translations }: PracticeSectionProps) {
           </div>
 
           {/* Right Column: Steps 4-6 */}
-          <div className="space-y-6 md:space-y-8 md:space-y-12">
+          <div className="space-y-6 md:space-y-12">
             <div
               onMouseEnter={() => setHoveredStep(4)}
               onMouseLeave={() => setHoveredStep(null)}
