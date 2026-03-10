@@ -139,7 +139,7 @@ export const projects: Project[] = [
         title: "Gamanatura",
         subtitle: "Branding Premium",
         description: [
-          "é uma marca portuguesa de têxteis-lar com mais de 30 anos de história, enraizada no mercado ibérico. À medida que evolui para um posicionamento de luxo -  expandindo-se da roupa de cama para a moda - a marca começa a ser comercializada em mercados como Itália, Estados Unidos e Emirados Árabes Unidos.",
+          "A Gamanatura é uma marca portuguesa de têxteis-lar com mais de 30 anos de história, enraizada no mercado ibérico. À medida que evolui para um posicionamento de luxo -  expandindo-se da roupa de cama para a moda - a marca começa a ser comercializada em mercados como Itália, Estados Unidos e Emirados Árabes Unidos.",
           "Trabalhámos com a Gamanatura na construção de uma nova direção criativa aplicada a todos os pontos de comunicação da marca, do design gráfico ao packaging, fotografia e web design.",
           "Este novo capítulo traduziu-se numa nova marca: agora com um tom de voz mais sofisticado, uma identidade visual contemporânea, e uma estrutura de storytelling clara que reforça a ligação emocional. Aplicado de forma consistente em todos os pontos de contacto, o nosso trabalho constrói uma presença distinta, posicionando a Gamanatura como uma marca de luxo moderna."
         ],
@@ -259,7 +259,7 @@ export const projects: Project[] = [
         title: "Adalberto Textile Solutions",
         subtitle: "Têxteis do Futuro",
         description: [
-          "(est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
+          "A Adalberto Textile Solutions (est. 1969) é uma empresa têxtil portuguesa de referência. Este rebranding acontece num momento-chave da sua trajetória, que evolui de um negócio essencialmente focado em estamparia para um posicionamento global e tecnológico, centrado na inovação têxtil:  a equipa da Adalberto desenvolveu a primeira máscara COVID certificada da indústria, entre outras inovações sustentáveis.",
           "O rebranding foi pensado para comunicar o salto evolutivo: preservar a herança do logótipo original, já reconhecido no mercado, mas redefinindo tudo o que o rodeia - uma direção criativa contemporânea e orientada para a visão tecnológica, uma linguagem fotográfica e ilustrações alinhadas com o novo storytelling, assim como um novo sistema tipográfico, agora mais refinado.",
         ],
         role: "Branding, Design Gráfico, Direção Criativa, Ilustração e Redes Sociais",
@@ -297,7 +297,7 @@ export const projects: Project[] = [
         title: "Bouchara",
         subtitle: "Design de Padrões",
         description: [
-          "é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
+          "A Bouchara é uma marca francesa de têxteis-lar e decoração, fundada em 1899. Temos vindo a desenvolver uma série de padrões para os seus produtos, desde 2018, criados em linha com a sua direção criativa. Os padrões são desenhados à mão e assentam numa ideia de movimento e na sobreposição inesperada de elementos, gerando composições dinâmicas, como se estivessem vivos.",
         ],
         role: "Design de Padrões e Ilustração",
         client: "Bouchara",
@@ -370,7 +370,7 @@ export const projects: Project[] = [
         title: "Elevique",
         subtitle: "Comunicação Visual",
         description: [
-          "é uma agência focada em performance digital, que trabalha com negócios em Portugal e nos Estados Unidos para gerar leads qualificadas de forma consistente. Com base em dados e estratégia, a agência combina SEO, Google Ads, e Meta Ads para ajudar os seus clientes a chegar a públicos com intenção real de compra, mantendo sempre o foco no retorno sobre o investimento.",
+          "A Elevique é uma agência focada em performance digital, que trabalha com negócios em Portugal e nos Estados Unidos para gerar leads qualificadas de forma consistente. Com base em dados e estratégia, a agência combina SEO, Google Ads, e Meta Ads para ajudar os seus clientes a chegar a públicos com intenção real de compra, mantendo sempre o foco no retorno sobre o investimento.",
           "O nosso trabalho centrou-se no desenvolvimento da identidade visual da Elevique e de templates para redes sociais, criando um sistema claro e coeso que apoia o seu propósito e facilita uma comunicação eficaz.",
         ],
         role: "Identidade Visual e Redes Sociais",
@@ -484,7 +484,7 @@ export const projects: Project[] = [
         title: "PhysiOlim",
         subtitle: "Comunicação Visual",
         description: [
-          " é uma clínica de fisioterapia localizada em Paris. Centrada na educação, na prevenção e no acompanhamento personalizado, com especial atenção a mulheres sobreviventes de cancro da mama, a Physiolim acredita que o movimento é uma ferramenta essencial no processo de recuperação, e entende a fisioterapia como um caminho que envolve tanto o corpo como o lado emocional.",
+          "A PhysiOlim é uma clínica de fisioterapia localizada em Paris. Centrada na educação, na prevenção e no acompanhamento personalizado, com especial atenção a mulheres sobreviventes de cancro da mama, a Physiolim acredita que o movimento é uma ferramenta essencial no processo de recuperação, e entende a fisioterapia como um caminho que envolve tanto o corpo como o lado emocional.",
           "O nosso trabalho passou pela criação da identidade visual e de templates para redes sociais, pensados para comunicar de forma clara, próxima e empática com o público-alvo. Numa área particularmente sensível como a saúde, o sistema visual foi desenvolvido para transmitir confiança, cuidado e segurança, apoiando a Physiolim na comunicação de percursos de recuperação profundamente humanos, com respeito e sensibilidade.",
         ],
         role: "Identidade Visual e Redes Sociais",
@@ -557,7 +557,7 @@ export const projects: Project[] = [
         title: "Graccioza",
         subtitle: "Ilustração",
         description: [
-          "é uma marca portuguesa de luxo. Com mais de 50 anos de história, é reconhecida pelas suas toalhas premium, assim como pela presença em alguns dos mais prestigiados pontos de venda internacionais, como o Le Bon Marché e o Harrods. A nossa colaboração centrou-se no desenvolvimento de ilustração. Cada animal ganha forma a partir de salpicos de água, construído com cores fortes e movimentos orgânicos. Totalmente desenhadas à mão, as ilustrações captam uma sensação de frescura, traduzindo a vitalidade do oceano numa linguagem visual vibrante.",
+          "A Graccioza é uma marca portuguesa de luxo. Com mais de 50 anos de história, é reconhecida pelas suas toalhas premium, assim como pela presença em alguns dos mais prestigiados pontos de venda internacionais, como o Le Bon Marché e o Harrods. A nossa colaboração centrou-se no desenvolvimento de ilustração. Cada animal ganha forma a partir de salpicos de água, construído com cores fortes e movimentos orgânicos. Totalmente desenhadas à mão, as ilustrações captam uma sensação de frescura, traduzindo a vitalidade do oceano numa linguagem visual vibrante.",
         ],
         role: "Ilustração",
         client: "Graccioza, Portugal",

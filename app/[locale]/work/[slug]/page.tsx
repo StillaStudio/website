@@ -65,9 +65,21 @@ export default async function ProjectPage({ params }: { params: Promise<{ locale
               {project.description.map((paragraph, index) => (
                 <p key={index} className="text-xl mb-8 leading-relaxed">
                   {index === 0 ? (
-                    <>
-                      <span className="font-medium">{project.title}</span> {paragraph.replace(project.title, "")}
-                    </>
+                    paragraph.includes(project.title) ? (
+                      // If paragraph already contains title, make it bold within the paragraph
+                      <>
+                        {paragraph.split(project.title).flatMap((part, i, arr) =>
+                          i < arr.length - 1
+                            ? [part, <span key={`title-${i}`} className="font-medium">{project.title}</span>]
+                            : [part]
+                        )}
+                      </>
+                    ) : (
+                      // Current behavior: bold title + paragraph
+                      <>
+                        <span className="font-medium">{project.title}</span> {paragraph.replace(project.title, "")}
+                      </>
+                    )
                   ) : (
                     paragraph
                   )}

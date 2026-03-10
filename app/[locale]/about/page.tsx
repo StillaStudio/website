@@ -2,7 +2,6 @@ import { Header } from "@/components/header"
 import { PracticeSection } from "@/components/practice-section"
 import { setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
-import Image from 'next/image'
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params
@@ -32,14 +31,10 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </section>
 
         {/* Blue Section */}
-        <section className="w-full h-[400px] md:h-[800px] relative">
-          <Image
-            src="/images/home/ABOUT.webp"
-            alt="About Still a Studio"
-            fill
-            className="object-cover"
-            priority
-          />
+        <section
+          className="w-full bg-center bg-cover bg-no-repeat h-[400px] md:h-[800px]"
+          style={{ backgroundImage: 'url(/images/home/ABOUT.webp)' }}
+        >
         </section>
 
         {/* The Practice Section */}
@@ -70,25 +65,50 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
               <div>
                 <h3 className="text-3xl md:text-[48px] mb-6 md:mb-8 serif">{t('services.title')}</h3>
-                <div className="grid grid-cols-2 gap-x-12 md:gap-x-24 gap-y-3">
-                  <p className="text-base md:text-[24px]">{t('services.artDirection')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.brandStrategy')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.branding')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.copy')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.corporatePresentations')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.creativeDirection')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.editorial')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.film')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.identitySystems')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.illustration')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.naming')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.packaging')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.patternDesign')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.photography')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.print')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.socialMediaDesign')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.visualIdentity')}</p>
-                  <p className="text-base md:text-[24px]">{t('services.webDesign')}</p>
+                <div className={`grid grid-cols-2 ${locale === 'pt' ? 'gap-x-14 md:gap-x-28' : 'gap-x-12 md:gap-x-24'} gap-y-3`}>
+                  {locale === 'pt' ? (
+                    <>
+                      <p className="text-base md:text-[24px]">{t('services.corporatePresentations')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.branding')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.copy')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.patternDesign')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.socialMediaDesign')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.creativeDirection')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.artDirection')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.editorial')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.brandStrategy')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.film')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.photography')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.visualIdentity')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.illustration')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.naming')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.packaging')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.print')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.identitySystems')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.webDesign')}</p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="text-base md:text-[24px]">{t('services.artDirection')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.brandStrategy')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.branding')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.copy')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.corporatePresentations')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.creativeDirection')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.editorial')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.film')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.identitySystems')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.illustration')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.naming')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.packaging')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.patternDesign')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.photography')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.print')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.socialMediaDesign')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.visualIdentity')}</p>
+                      <p className="text-base md:text-[24px]">{t('services.webDesign')}</p>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
