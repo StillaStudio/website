@@ -537,9 +537,9 @@ export const projects: Project[] = [
     date: "2023 - 2024",
     categories: ['illustrationPatterns'],
     media: [
-      { type: 'image', src: "/images/projects/gracciza/1.webp" },
-      { type: 'image', src: "/images/projects/gracciza/2.webp" },
-      { type: 'image', src: "/images/projects/gracciza/3.webp" },
+      { type: 'image', src: "/images/projects/gracciza/01.webp" },
+      { type: 'image', src: "/images/projects/gracciza/02.webp" },
+      { type: 'image', src: "/images/projects/gracciza/03.webp" },
       { type: 'video', src: "/videos/projects/gracciza/4.mp4" },
       { type: 'video', src: "/videos/projects/gracciza/5.mp4" },
     ],
